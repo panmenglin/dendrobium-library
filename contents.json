@@ -1,0 +1,8 @@
+{
+    "library": [{
+        "name": "Ant Design",
+        "code": "antd",
+        "path": "https://raw.githubusercontent.com/panmenglin/dendrobium-library/main/library/antd/antd.json"
+    }],
+    "snippets": []
+}
