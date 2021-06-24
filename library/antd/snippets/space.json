@@ -1,0 +1,10 @@
+{
+  "antd space": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "Space",
+    "body": ["<Space>$1</Space>"],
+    "description": "间距",
+    "componentCode": "antd/space",
+    "libraryCode": "antd"
+  }
+}

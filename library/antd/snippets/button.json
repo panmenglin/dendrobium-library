@@ -1,0 +1,26 @@
+{
+  "antd button": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "Button",
+    "body": ["<Button>$1</Button>"],
+    "description": "次按钮",
+    "componentCode": "antd/button",
+    "libraryCode": "antd"
+  },
+  "antd primary button": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "Button",
+    "body": ["<Button type='primary'>$1</Button>"],
+    "description": "主按钮",
+    "componentCode": "antd/button",
+    "libraryCode": "antd"
+  },
+  "antd loading button": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "Button",
+    "body": ["<Button loading={loading}>$1</Button>"],
+    "description": "按钮加载中状态",
+    "componentCode": "antd/button",
+    "libraryCode": "antd"
+  }
+}

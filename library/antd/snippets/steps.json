@@ -1,0 +1,16 @@
+{
+  "antd steps": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "Steps",
+    "body": [
+      "<Steps current={1}>",
+      "  <Step title='Finished' description='This is a description.' />",
+      "  <Step title='In Progress' subTitle='Left 00:00:08' description='This is a description.' />",
+      "  <Step title='Waiting' description='This is a description.' />",
+      "</Steps>"
+    ],
+    "description": "步骤条",
+    "componentCode": "antd/steps",
+    "libraryCode": "antd"
+  }
+}

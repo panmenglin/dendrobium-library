@@ -1,0 +1,12 @@
+{
+	"antd tooltip": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "Tooltip",
+		"body": [
+			"<Tooltip title='$1'>",
+			"   $2",
+			"</Tooltip>"
+		],
+		"description": "简单的文字提示气泡框。"
+	}
+}

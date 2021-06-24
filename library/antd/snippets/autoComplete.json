@@ -1,0 +1,20 @@
+{
+  "antd autoComplete": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "AutoComplete",
+    "body": [
+      "<AutoComplete",
+      "  value={value}",
+      "  options={options}",
+      "  style={{ width: 200 }}",
+      "  onSelect={onSelect}",
+      "  onSearch={onSearch}",
+      "  onChange={onChange}",
+      "  placeholder='control mode'",
+      "/>"
+    ],
+    "description": "自动完成",
+    "componentCode": "antd/autoComplete",
+    "libraryCode": "antd"
+  }
+}

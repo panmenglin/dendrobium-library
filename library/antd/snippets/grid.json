@@ -1,0 +1,23 @@
+{
+  "antd grid": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "Grid",
+    "body": ["<Row gutter={16}>", "   <Col span={$1}>", "   </Col>", "</Row>"],
+    "description": "栅格",
+    "componentCode": "antd/grid",
+    "libraryCode": "antd"
+  },
+  "antd grid offset": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "Grid",
+    "body": [
+      "<Row gutter={16}>",
+      "   <Col span={$1} offset={$2}>",
+      "   </Col>",
+      "</Row>"
+    ],
+    "description": "偏移栅格",
+    "componentCode": "antd/grid",
+    "libraryCode": "antd"
+  }
+}

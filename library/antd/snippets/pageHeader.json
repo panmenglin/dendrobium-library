@@ -1,0 +1,17 @@
+{
+  "antd pageHeader": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "PageHeader",
+    "body": [
+      "<PageHeader",
+      "  className='site-page-header'",
+      "  onBack={() => null}",
+      "  title='Title'",
+      "  subTitle='This is a subtitle'",
+      "/>"
+    ],
+    "description": "页头",
+    "componentCode": "antd/pageHeader",
+    "libraryCode": "antd"
+  }
+}

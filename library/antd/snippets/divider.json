@@ -1,0 +1,10 @@
+{
+  "divider": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "Divider",
+    "body": ["<Divider />"],
+    "description": "分割线",
+    "componentCode": "antd/divider",
+    "libraryCode": "antd"
+  }
+}

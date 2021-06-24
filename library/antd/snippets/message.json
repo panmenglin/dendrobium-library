@@ -1,0 +1,34 @@
+{
+	"antd info message": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "message",
+		"body": [
+			"message.info('$1');"
+		],
+		"description": "全局展示操作反馈信息。"
+	},
+	"antd success message": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "message",
+		"body": [
+			"message.success('$1');"
+		],
+		"description": "全局展示操作成功信息。"
+	},
+	"antd error message": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "message",
+		"body": [
+			"message.error('$1');"
+		],
+		"description": "全局展示操作失败信息。"
+	},
+	"antd warning message": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "message",
+		"body": [
+			"message.warning('$1');"
+		],
+		"description": "全局展示操作警告信息。"
+	}
+}

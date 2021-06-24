@@ -1,0 +1,10 @@
+{
+  "antd affix": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "Divider",
+    "body": ["<Affix offsetTop={$1}></Affix>"],
+    "description": "固钉",
+    "componentCode": "antd/affix",
+    "libraryCode": "antd"
+  }
+}
