@@ -1,0 +1,15 @@
+{
+  "dendrobium.librarysConfig": {
+    "configPath": "https://raw.githubusercontent.com/panmenglin/dendrobium-library/main/contents.json"
+  },
+  "dendrobium.packageManagementTool": {
+    "default": "yarn add"
+  },
+  "dendrobium.language": "zh-cn",
+  "dendrobium.statistics": {
+    "reportApi": {
+      "url": "",
+      "method": "POST"
+    }
+  }
+}
