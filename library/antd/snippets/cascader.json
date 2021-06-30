@@ -1,18 +1,17 @@
 {
-    "级联选择 动态加载 Calendar": {
-      "scope": "javascript,typescript,javascriptreact,typescriptreact",
-      "prefix": "Cascader, cascader, select",
-      "body": [
-        "<Cascader",
-        "  options={options}",
-        "  loadData={this.loadData}",
-        "  onChange={this.onChange}",
-        "  changeOnSelect",
-        "/>"
-      ],
-      "description": "级联选择 动态加载",
-      "componentCode": "antd/cascader",
-      "libraryCode": "antd"
-    }
+  "级联选择 动态加载 Calendar": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "Cascader, cascader, select",
+    "body": [
+      "<Cascader",
+      "  options={options}",
+      "  loadData={this.loadData}",
+      "  onChange={this.onChange}",
+      "  changeOnSelect",
+      "/>"
+    ],
+    "description": "级联选择 动态加载",
+    "componentCode": "antd/cascader",
+    "libraryCode": "antd"
   }
-  
+}
