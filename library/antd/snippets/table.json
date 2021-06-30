@@ -13,12 +13,12 @@
       "/>"
     ],
     "componentFunction": [
-      "data = []",
+      "data = [];",
       "",
       "pagination = {",
       "  current: 1,",
       "  pageSize: 10,",
-      "},",
+      "};",
       "",
       "columns = [",
       "  {",
