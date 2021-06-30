@@ -1,10 +1,19 @@
 {
-	"antd table": {
-		"scope": "javascript,typescript,javascriptreact,typescriptreact",
-		"prefix": "Table",
-		"body": [
-			"<Table columns={$1} dataSource={$2} />"
-		],
-		"description": "展示行列数据。"
-	}
+  "表格 远程加载数据 Table": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "Table table",
+    "body": [
+      "<Table",
+      "  columns={columns}",
+      "  rowKey={record => record.id}",
+      "  dataSource={data}",
+      "  pagination={pagination}",
+      "  loading={loading}",
+      "  onChange={this.handleTableChange}",
+      "/>"
+    ],
+    "description": "表格 远程加载数据",
+    "componentCode": "antd/table",
+    "libraryCode": "antd"
+  }
 }

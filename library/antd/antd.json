@@ -636,7 +636,7 @@
       "tags": ["数据展示", "标签页", "React"],
       "previewImg": "https://raw.githubusercontent.com/panmenglin/dendrobium-library/main/library/antd/images/tabs.png",
       "code": "antd/tabs",
-      "importName": ["Tabs", "TabPane"],
+      "importName": ["Tabs"],
       "name": "antd",
       "doc": "https://ant.design/components/tabs-cn/",
       "docFile": "https://raw.githubusercontent.com/ant-design/ant-design/master/components/tabs/index.zh-CN.md",

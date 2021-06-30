@@ -1,17 +1,19 @@
 {
-	"antd tabs": {
-		"scope": "javascript,typescript,javascriptreact,typescriptreact",
-		"prefix": "Tabs",
-		"body": [
-			"<Tabs defaultActiveKey='$1' onChange={$2}>",
-			"   <TabPane tab='$3' key='$4'>",
-			"       $5",
-			"   </TabPane>",
-			"   <TabPane tab='$6' key='$7'>",
-			"       $8",
-			"   </TabPane>",
-			"</Tabs>"
-		],
-		"description": "选项卡切换组件。"
-	}
+  "标签页 Tabs": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "Tabs tabs",
+    "body": [
+      "<Tabs defaultActiveKey=\"$1\" onChange={this.callback}>",
+      "   <Tabs.TabPane tab=\"$3\" key=\"$4\">",
+      "       $5",
+      "   </Tabs.TabPane>",
+      "   <Tabs.TabPane tab=\"$6\" key=\"$7\">",
+      "       $8",
+      "   </Tabs.TabPane>",
+      "</Tabs>"
+    ],
+    "description": "选项卡切换组件。",
+    "componentCode": "antd/tabs",
+    "libraryCode": "antd"
+  }
 }
