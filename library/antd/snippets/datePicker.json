@@ -1,0 +1,18 @@
+{
+  "日期选择框 预设范围 DatePicker": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "DatePicker, datepicker, date",
+    "body": [
+      "<RangePicker",
+      "  ranges={{",
+      "    Today: [moment(), moment()],",
+      "   'This Month': [moment().startOf('month'), moment().endOf('month')],",
+      "  }}",
+      "  onChange={this.onChange}",
+      "/>"
+    ],
+    "description": "日期选择框 预设范围",
+    "componentCode": "antd/datePicker",
+    "libraryCode": "antd"
+  }
+}

@@ -1,10 +1,10 @@
 {
   "栅格 Grid": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "prefix": "Grid",
+    "prefix": "Grid, grid, Row, row , Col, col",
     "body": [
       "<Row gutter={$1}>",
-      "   <Col span={${2|1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24|}}>$3</Col>",
+      "   <Col span={${2| ,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24|}}>$3</Col>",
       "</Row>"],
     "description": "栅格",
     "componentCode": "antd/grid",
@@ -12,7 +12,7 @@
   },
   "二列栅格 Grid": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "prefix": "Grid",
+    "prefix": "Grid, grid, Row, row , Col, col",
     "body": [
       "<Row gutter={$1}>",
       "   <Col span={12}></Col>",
@@ -24,7 +24,7 @@
   },
   "三列栅格 Grid": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "prefix": "Grid",
+    "prefix": "Grid, grid, Row, row , Col, col",
     "body": [
       "<Row gutter={$1}>",
       "   <Col span={8}></Col>",
@@ -37,7 +37,7 @@
   },
   "四列栅格 Grid": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "prefix": "Grid",
+    "prefix": "Grid, grid, Row, row , Col, col",
     "body": [
       "<Row gutter={$1}>",
       "   <Col span={6}></Col>",
@@ -46,19 +46,6 @@
       "   <Col span={6}></Col>",
       "</Row>"],
     "description": "栅格",
-    "componentCode": "antd/grid",
-    "libraryCode": "antd"
-  },
-  "偏移栅格 Grid Offset": {
-    "scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "prefix": "Grid",
-    "body": [
-      "<Row gutter={$1}>",
-      "   <Col span={${2|1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24|}} offset={$3}>",
-      "   </Col>",
-      "</Row>"
-    ],
-    "description": "偏移栅格",
     "componentCode": "antd/grid",
     "libraryCode": "antd"
   }

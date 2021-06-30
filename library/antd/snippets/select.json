@@ -1,0 +1,47 @@
+{
+  "选择器 搜索框 Select": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "Select, select, search",
+    "body": [
+      "<Select",
+      "  showSearch",
+      "  value={$1}",
+      "  placeholder={$2}",
+      "  defaultActiveFirstOption={false}",
+      "  showArrow={false}",
+      "  filterOption={false}",
+      "  onSearch={this.handleSearch}",
+      "  onChange={this.handleChange}",
+      "  notFoundContent={null}",
+      ">",
+      "  {",
+      "    data.map(d => <Option key={d.value}>{d.text}</Option>);",
+      "  }",
+      "</Select>"
+    ],
+    "description": "选择器 搜索框",
+    "componentCode": "antd/select",
+    "libraryCode": "antd"
+  },
+  "选择器 多选 Select": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "Select, select, search",
+    "body": [
+      "<Select",
+      "  mode=\"multiple\"",
+      "  disabled",
+      "  style={{ width: '100%' }}",
+      "  placeholder=\"${1}\"",
+      "  defaultValue={[$2]}",
+      "  onChange={this.handleChange}",
+      ">",
+      "  {",
+      "    data.map(d => <Option key={d.value}>{d.text}</Option>);",
+      "  }",
+      "</Select>"
+    ],
+    "description": "选择器 多选",
+    "componentCode": "antd/select",
+    "libraryCode": "antd"
+  }
+}
