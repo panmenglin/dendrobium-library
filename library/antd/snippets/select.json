@@ -18,6 +18,19 @@
       "  }",
       "</Select>"
     ],
+    "componentFunction": [
+      "handleSearch = value => {",
+      "  if (value) {",
+      "    fetch(value, data => this.setState({ data }));",
+      "  } else {",
+      "    this.setState({ data: [] });",
+      "  }",
+      "};",
+      "",
+      "handleChange = value => {",
+      "  this.setState({ value });",
+      "};"
+    ],
     "description": "选择器 搜索框",
     "componentCode": "antd/select",
     "libraryCode": "antd"
@@ -37,6 +50,11 @@
       "    data.map(d => <Select.Option key={d.value}>{d.text}</Select.Option>)",
       "  }",
       "</Select>"
+    ],
+    "componentFunction": [
+      "function handleChange(value) {",
+      "  console.log(`selected ${value}`);",
+      "}"
     ],
     "description": "选择器 多选",
     "componentCode": "antd/select",

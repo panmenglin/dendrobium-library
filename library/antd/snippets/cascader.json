@@ -4,11 +4,20 @@
     "prefix": "Cascader, cascader, select",
     "body": [
       "<Cascader",
-      "  options={options}",
+      "  options={this.options}",
       "  loadData={this.loadData}",
       "  onChange={this.onChange}",
       "  changeOnSelect",
       "/>"
+    ],
+    "componentFunction": [
+      "options = []",
+      "",
+      "loadData = selectedOptions => {}",
+      "",
+      "onChange = (value, selectedOptions) => {",
+      "  console.log(value, selectedOptions);",
+      "};"
     ],
     "description": "级联选择 动态加载",
     "componentCode": "antd/cascader",
