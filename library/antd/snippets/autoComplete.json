@@ -1,19 +1,48 @@
 {
-  "antd autoComplete": {
+  "自动完成 AutoComplete": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "prefix": "AutoComplete",
-    "body": [
-      "<AutoComplete",
-      "  value={value}",
-      "  options={options}",
-      "  style={{ width: 200 }}",
-      "  onSelect={onSelect}",
-      "  onSearch={onSearch}",
-      "  onChange={onChange}",
-      "  placeholder='control mode'",
-      "/>"
-    ],
-    "description": "自动完成",
+    "prefix": "antd AutoComplete autoComplete 自动完成",
+    "body": {
+      "element": [
+        "<AutoComplete",
+        "  value={value}",
+        "  options={options}",
+        "  style={{ width: 200 }}",
+        "  onSelect={onSelect}",
+        "  onSearch={onSearch}",
+        "  onChange={onChange}",
+        "  placeholder='control mode'",
+        "/>"
+      ],
+      "state": [
+        "state = {",
+        "  value: '',",
+        "  options: []",
+        "}"
+      ],
+      "method": [
+        "onSearch = (searchText) => {",
+        "  const mockVal = (str, repeat = 1) => ({",
+        "    value: str.repeat(repeat),",
+        "  });",
+        "",
+        "  this.setState({",
+        "    options: !searchText ? [] : [mockVal(searchText), mockVal(searchText, 2), mockVal(searchText, 3)],",
+        "  });",
+        "};",
+        "",
+        "onSelect = (data) => {",
+        "  console.log('onSelect', data);",
+        "};",
+        "",
+        "onChange = (data: string) => {",
+        "  this.setState({",
+        "    value: data",
+        "  });",
+        "};"
+      ]
+    },
+    "description": "输入框自动完成功能。",
     "componentCode": "antd/autoComplete",
     "libraryCode": "antd"
   }

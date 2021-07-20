@@ -1,0 +1,19 @@
+{
+  "锚点 Anchor": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "antd Anchor anchor 锚点",
+    "body": [
+      "<Anchor>",
+      "  <Link href=\"#$1\" title=\"$2\" />",
+      "  <Link href=\"#components-anchor-demo-static\" title=\"Static demo\" />",
+      "  <Link href=\"#API\" title=\"API\">",
+      "    <Link href=\"#Anchor-Props\" title=\"Anchor Props\" />",
+      "    <Link href=\"#Link-Props\" title=\"Link Props\" />",
+      "  </Link>",
+      "</Anchor>"
+    ],
+    "description": "用于跳转到页面指定位置。",
+    "componentCode": "antd/anchor",
+    "libraryCode": "antd"
+  }
+}

@@ -1,9 +1,17 @@
 {
-  "divider": {
+  "分割线 Divider": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "Divider",
-    "body": ["<Divider />"],
+    "body": ["<Divider type=\"${1|horizontal,vertical}\"/>"],
     "description": "分割线",
+    "componentCode": "antd/divider",
+    "libraryCode": "antd"
+  },
+  "带文字的分割线 Divider": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "Divider",
+    "body": ["<Divider type=\"${1|horizontal,vertical}\" orientation=\"${2|center,left,right}\">$3</Divider>"],
+    "description": "带文字的分割线",
     "componentCode": "antd/divider",
     "libraryCode": "antd"
   }

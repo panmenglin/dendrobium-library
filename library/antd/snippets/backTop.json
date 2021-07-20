@@ -1,0 +1,10 @@
+{
+  "回到顶部 BackTop": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "antd BackTop backTop backtop 回到顶部",
+    "body": ["<BackTop />"],
+    "description": "返回页面顶部的操作按钮。",
+    "componentCode": "antd/backTop",
+    "libraryCode": "antd"
+  }
+}

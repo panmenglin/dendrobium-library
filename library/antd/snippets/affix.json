@@ -1,9 +1,22 @@
 {
-  "antd affix": {
+  "固钉 Affix": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "prefix": "Divider",
-    "body": ["<Affix offsetTop={$1}></Affix>"],
-    "description": "固钉",
+    "prefix": "antd Affix affix 固钉",
+    "body": {
+      "element": [
+        "<Affix offsetTop={this.state.top}>",
+        "  <Button type=\"primary\" onClick={() => this.setState({top: this.state.top + 10})}>",
+        "    Affix top",
+        "  </Button>",
+        "</Affix>"
+      ],
+      "state": [
+        "state = {",
+        "  top: 10,",
+        "}"
+      ]
+    },
+    "description": "将页面元素钉在可视范围。",
     "componentCode": "antd/affix",
     "libraryCode": "antd"
   }

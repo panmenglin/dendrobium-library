@@ -1,0 +1,22 @@
+{
+  "警告提示 Alert": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "antd Alert alert 警告 提示",
+    "body": [
+      "<Alert message=\"$1\" type=\"${2|success,info,warning,error|}\" />"
+    ],
+    "description": "警告提示，展现需要关注的信息。",
+    "componentCode": "antd/alert",
+    "libraryCode": "antd"
+  },
+  "警告提示 图标 Alert": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "Alert alert 警告 提示",
+    "body": [
+      "<Alert message=\"$1\" type=\"${2|success,info,warning,error|}\" showIcon closable />"
+    ],
+    "description": "警告提示，展现需要关注的信息。",
+    "componentCode": "antd/alert",
+    "libraryCode": "antd"
+  }
+}

@@ -2,16 +2,16 @@
   "按钮 Button": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "Button",
-    "body": ["<Button type=\"${1}\">$2</Button>"],
+    "body": ["<Button type=\"${1|primary,ghost,dashed,link,text,default|}\">$2</Button>"],
     "description": "按钮",
     "componentCode": "antd/button",
     "libraryCode": "antd"
   },
-  "主按钮 Primary Button": {
+  "Block 按钮 Button": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "Button",
-    "body": ["<Button type=\"primary\">$1</Button>"],
-    "description": "主按钮",
+    "body": ["<Button type=\"${1|primary,ghost,dashed,link,text,default|}\" block>$2</Button>"],
+    "description": "Block 按钮",
     "componentCode": "antd/button",
     "libraryCode": "antd"
   },
