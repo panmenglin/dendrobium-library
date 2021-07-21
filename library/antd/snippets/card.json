@@ -1,0 +1,45 @@
+{
+  "卡片 Card": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "antd Card card 卡片",
+    "body": [
+      "<Card size=\"${1|default,small|}\" title=\"card\" extra={<a href=\"#\">More</a>} style={{ width: 300 }}>",
+      "  <p>Card content</p>",
+      "  <p>Card content</p>",
+      "  <p>Card content</p>",
+      "</Card>"
+    ],
+    "description": "通用卡片容器。",
+    "componentCode": "antd/card",
+    "libraryCode": "antd"
+  },
+  "卡片 更多内容配置 Card": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "antd Card card 卡片",
+    "body": [
+      "<Card",
+      "  style={{ width: 300 }}",
+      "  cover={",
+      "    <img",
+      "    alt=\"example\"",
+      "    src=\"https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png\"",
+      "    />",
+      "  }",
+      "  actions={[",
+      "    <SettingOutlined key=\"setting\" />,",
+      "    <EditOutlined key=\"edit\" />,",
+      "    <EllipsisOutlined key=\"ellipsis\" />,",
+      "  ]}",
+      ">",
+      "  <Meta",
+      "    avatar={<Avatar src=\"https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png\" />}",
+      "    title=\"Card title\"",
+      "    description=\"This is the description\"",
+      "  />",
+      "</Card>"
+    ],
+    "description": "一种支持封面、头像、标题和描述信息的卡片。",
+    "componentCode": "antd/card",
+    "libraryCode": "antd"
+  }
+}

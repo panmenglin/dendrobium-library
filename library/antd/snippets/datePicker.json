@@ -1,17 +1,45 @@
 {
+  "日期选择框 DatePicker": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "antd DatePicker datepicker date 日期选择",
+    "body": {
+      "element": [
+        "<DatePicker onChange={this.onChange} picker=\"${1|date,week,month,quarter,year|}\" />"
+      ],
+      "method": [
+        "onChange = (dates, dateStrings) => {",
+        "  console.log(date, dateString);",
+        "}"
+      ]
+    },
+    "description": "输入或选择日期的控件。",
+    "componentCode": "antd/datePicker",
+    "libraryCode": "antd"
+  },
   "日期选择框 预设范围 DatePicker": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "prefix": "DatePicker, datepicker, date",
-    "body": [
-      "<DatePicker.RangePicker",
-      "  ranges={{",
-      "    Today: [moment(), moment()],",
-      "   'This Month': [moment().startOf('month'), moment().endOf('month')],",
-      "  }}",
-      "  onChange={this.onChange}",
-      "/>"
-    ],
-    "description": "日期选择框 预设范围",
+    "prefix": "antd DatePicker, datepicker, date, 日期选择",
+    "body": {
+      "import": [
+        "import moment from 'moment';"
+      ],
+      "element": [
+        "<DatePicker.RangePicker",
+        "  ranges={{",
+        "    Today: [moment(), moment()],",
+        "   'This Month': [moment().startOf('month'), moment().endOf('month')],",
+        "  }}",
+        "  onChange={this.onChange}",
+        "/>"
+      ],
+      "method": [
+        "onChange = (dates, dateStrings) => {",
+        "  console.log('From: ', dates[0], ', to: ', dates[1]);",
+        "  console.log('From: ', dateStrings[0], ', to: ', dateStrings[1]);",
+        "}"
+      ]
+    },
+    "description": "可以预设常用的日期范围以提高用户体验。",
     "componentCode": "antd/datePicker",
     "libraryCode": "antd"
   }

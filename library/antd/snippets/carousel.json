@@ -1,0 +1,41 @@
+{
+  "走马灯 Carousel": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "antd Carousel carousel 走马灯",
+    "body": {
+      "element": [
+        "<Carousel afterChange={this.onChange}>",
+        "  <div>",
+        "    <h3 style={this.contentStyle}>1</h3>",
+        "  </div>",
+        "  <div>",
+        "    <h3 style={this.contentStyle}>2</h3>",
+        "  </div>",
+        "  <div>",
+        "    <h3 style={this.contentStyle}>3</h3>",
+        "  </div>",
+        "  <div>",
+        "    <h3 style={this.contentStyle}>4</h3>",
+        "  </div>",
+        "</Carousel>"
+      ],
+      "property": [
+        "contentStyle = {",
+        "  height: '160px',",
+        "  color: '#fff',",
+        "  lineHeight: '160px',",
+        "  textAlign: 'center',",
+        "  background: '#364d79',",
+        "};"
+      ],
+      "method": [
+        "onChange = (a, b, c) => {",
+        "  console.log(a, b, c);",
+        "};"
+      ]
+    },
+    "description": "旋转木马，一组轮播的区域。",
+    "componentCode": "antd/carousel",
+    "libraryCode": "antd"
+  }
+}

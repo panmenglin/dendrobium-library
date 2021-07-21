@@ -884,21 +884,6 @@
       "snippets": "https://raw.githubusercontent.com/panmenglin/dendrobium-library/main/library/antd/snippets/backTop.json",
       "parentCode": "antd",
       "author": "antd"
-    },
-    {
-      "title": "ConfigProvider 全局化配置",
-      "description": "为组件提供统一的全局化配置。",
-      "tags": ["其他", "全局化配置", "React"],
-      "previewImg": "https://raw.githubusercontent.com/panmenglin/dendrobium-library/main/library/antd/images/configProvider.png",
-      "code": "antd/configProvider",
-      "importName": ["ConfigProvider"],
-      "name": "antd",
-      "doc": "https://ant.design/components/config-provider-cn/",
-      "docFile": "https://raw.githubusercontent.com/ant-design/ant-design/master/components/config-provider/index.zh-CN.md",
-      "docKeys": "ConfigProvider",
-      "snippets": "https://raw.githubusercontent.com/panmenglin/dendrobium-library/main/library/antd/snippets/configProvider.json",
-      "parentCode": "antd",
-      "author": "antd"
     }
   ]
 }

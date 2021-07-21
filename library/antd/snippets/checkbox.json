@@ -1,18 +1,22 @@
 {
-  "antd checkbox": {
+  "多选框 Checkbox": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "prefix": "Checkbox",
-    "body": [
-      "checkboxRender = () => {",
-      "  const plainOptions = ['Apple', 'Pear', 'Orange'];",
-      "",
-      "  function onChange(checkedValues) {",
-      "    console.log('checked = ', checkedValues);",
-      "  }",
-      "",
-      "  return <Checkbox.Group options={plainOptions} defaultValue={['Apple']} onChange={onChange} />",
-      "}"
-    ],
+    "prefix": "antd Checkbox checkbox 多选框",
+    "body": {
+      "element": [
+        "<Checkbox.Group options={plainOptions} defaultValue={['Apple']} onChange={onChange} />"
+      ],
+      "state": [
+        "state = {",
+        "  plainOptions: ['Apple', 'Pear', 'Orange']",
+        "}"
+      ],
+      "method": [
+        "onChange = (checkedValues) => {",
+        "  console.log('checked = ', checkedValues);",
+        "}"
+      ]
+    },
     "description": "多选框",
     "componentCode": "antd/checkbox",
     "libraryCode": "antd"

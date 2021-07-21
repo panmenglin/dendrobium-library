@@ -1,0 +1,17 @@
+{
+  "日历 Calendar": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "antd Calendar calendar 日历",
+    "body": {
+      "element": ["<Calendar onPanelChange={onPanelChange} />"],
+      "method": [
+        "onPanelChange = (value, mode) => {",
+        "  console.log(value.format('YYYY-MM-DD'), mode);",
+        "};"
+      ]
+    },
+    "description": "按照日历形式展示数据的容器。",
+    "componentCode": "antd/calendar",
+    "libraryCode": "antd"
+  }
+}

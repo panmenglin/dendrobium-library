@@ -1,25 +1,29 @@
 {
   "按钮 Button": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "prefix": "Button",
-    "body": ["<Button type=\"${1|primary,ghost,dashed,link,text,default|}\">$2</Button>"],
-    "description": "按钮",
+    "prefix": "antd Button button 按钮",
+    "body": [
+      "<Button type=\"${1|primary,ghost,dashed,link,text,default|}\">$2</Button>"
+    ],
+    "description": "按钮用于开始一个即时操作。",
     "componentCode": "antd/button",
     "libraryCode": "antd"
   },
-  "Block 按钮 Button": {
+  "按钮 Block Button": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "prefix": "Button",
-    "body": ["<Button type=\"${1|primary,ghost,dashed,link,text,default|}\" block>$2</Button>"],
-    "description": "Block 按钮",
+    "prefix": "antd Button button 按钮",
+    "body": [
+      "<Button type=\"${1|primary,ghost,dashed,link,text,default|}\" block>$2</Button>"
+    ],
+    "description": "block 属性将使按钮适合其父宽度。",
     "componentCode": "antd/button",
     "libraryCode": "antd"
   },
   "按钮 加载中状态 Loading Button": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "prefix": "Button",
+    "prefix": "antd Button button loading 按钮",
     "body": ["<Button loading={loading}>$1</Button>"],
-    "description": "按钮 加载中状态",
+    "description": "添加 loading 属性即可让按钮处于加载状态。",
     "componentCode": "antd/button",
     "libraryCode": "antd"
   }

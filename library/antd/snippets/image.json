@@ -1,0 +1,15 @@
+{
+  "图片 Image": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "antd Image image 图片",
+    "body": [
+      "<Image",
+      "  width={200}",
+      "  src=\"https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png\"",
+      "/>"
+    ],
+    "description": "图片",
+    "componentCode": "antd/image",
+    "libraryCode": "antd"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "分割线 Divider": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "prefix": "Divider",
+    "prefix": "antd Divider divider 分割线",
     "body": ["<Divider type=\"${1|horizontal,vertical}\"/>"],
     "description": "分割线",
     "componentCode": "antd/divider",
@@ -9,7 +9,7 @@
   },
   "带文字的分割线 Divider": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "prefix": "Divider",
+    "prefix": "antd Divider divider 分割线",
     "body": ["<Divider type=\"${1|horizontal,vertical}\" orientation=\"${2|center,left,right}\">$3</Divider>"],
     "description": "带文字的分割线",
     "componentCode": "antd/divider",

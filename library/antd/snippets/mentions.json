@@ -1,0 +1,32 @@
+{
+  "提及 Mentions": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "antd Mentions mentions 提及",
+    "body": {
+      "element": [
+        "<Mentions",
+        "  style={{ width: '100%' }}",
+        "  onChange={this.onChange}",
+        "  onSelect={this.onSelect}",
+        "  defaultValue=\"@afc163\"",
+        ">",
+        "  <Mentions.Option value=\"afc163\">afc163</Mentions.Option>",
+        "  <Mentions.Option value=\"zombieJ\">zombieJ</Mentions.Option>",
+        "  <Mentions.Option value=\"yesmeck\">yesmeck</Mentions.Option>",
+        "</Mentions>"
+      ],
+      "method": [
+        "onChange = (value) => {",
+        "  console.log('Change:', value);",
+        "}",
+        "",
+        "onSelect = (option) => {",
+        "  console.log('select', option);",
+        "}"
+      ]
+    },
+    "description": "提及组件。",
+    "componentCode": "antd/mentions",
+    "libraryCode": "antd"
+  }
+}

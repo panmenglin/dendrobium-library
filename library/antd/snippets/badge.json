@@ -1,0 +1,26 @@
+{
+  "徽标数 Badge": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "antd Badge badge 徽标数",
+    "body": [
+        "<Badge count={${1|5|}} overflowCount={${2|99|}}>",
+        "  <a href=\"#\" className=\"head-example\" />",
+        "</Badge>"
+    ],
+    "description": "图标右上角的圆形徽标数字。",
+    "componentCode": "antd/badge",
+    "libraryCode": "antd"
+  },
+  "徽标 图标 Badge": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "antd Badge badge 徽标数",
+    "body": [
+        "<Badge count={${1|<ClockCircleOutlined style={{ color: '#f5222d' }} />|}}>",
+        "  <a href=\"#\" className=\"head-example\" />",
+        "</Badge>"
+    ],
+    "description": "图标右上角的图标。",
+    "componentCode": "antd/badge",
+    "libraryCode": "antd"
+  }
+}

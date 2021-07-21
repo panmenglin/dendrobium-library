@@ -1,0 +1,47 @@
+{
+  "抽屉 Drawer": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "antd Drawer drawer 抽屉",
+    "body": {
+      "element": [
+        "<>",
+        "  <Button type=\"primary\" onClick={this.showDrawer}>",
+        "    Open",
+        "  </Button>",
+        "  <Drawer",
+        "    title=\"Basic Drawer\"",
+        "    placement=\"right\"",
+        "    closable={false}",
+        "    onClose={onClose}",
+        "    visible={this.visible}",
+        "  >",
+        "    <p>Some contents...</p>",
+        "    <p>Some contents...</p>",
+        "    <p>Some contents...</p>",
+        "  </Drawer>",
+        "</>"
+      ],
+      "state": [
+        "state = {",
+        "  visible: false",
+        "}"
+      ],
+      "method": [
+        "showDrawer = () => {",
+        "  this.setState({",
+        "    visible: true",
+        "  })",
+        "};",
+        "",
+        "onClose = () => {",
+        "  this.setState({",
+        "    visible: false",
+        "  })",
+        "};"
+      ]
+    },
+    "description": "屏幕边缘滑出的浮层面板。",
+    "componentCode": "antd/drawer",
+    "libraryCode": "antd"
+  }
+}
