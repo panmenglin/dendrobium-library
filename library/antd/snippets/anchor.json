@@ -2,16 +2,21 @@
   "锚点 Anchor": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd Anchor anchor 锚点",
-    "body": [
-      "<Anchor>",
-      "  <Link href=\"#$1\" title=\"$2\" />",
-      "  <Link href=\"#components-anchor-demo-static\" title=\"Static demo\" />",
-      "  <Link href=\"#API\" title=\"API\">",
-      "    <Link href=\"#Anchor-Props\" title=\"Anchor Props\" />",
-      "    <Link href=\"#Link-Props\" title=\"Link Props\" />",
-      "  </Link>",
-      "</Anchor>"
-    ],
+    "snippets": {
+      "import": ["import { Anchor } from 'antd';"],
+      "variable": ["const {\n  Link\n} = Anchor;"],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Anchor>\n    <Link href=\"#components-anchor-demo-basic\" title=\"Basic demo\" />\n    <Link href=\"#components-anchor-demo-static\" title=\"Static demo\" />\n    <Link href=\"#API\" title=\"API\">\n      <Link href=\"#Anchor-Props\" title=\"Anchor Props\" />\n      <Link href=\"#Link-Props\" title=\"Link Props\" />\n    </Link>\n  </Anchor>",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
     "description": "用于跳转到页面指定位置。",
     "componentCode": "antd/anchor",
     "libraryCode": "antd"

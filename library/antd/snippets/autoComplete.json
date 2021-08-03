@@ -2,45 +2,26 @@
   "自动完成 AutoComplete": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd AutoComplete autoComplete 自动完成",
-    "body": {
-      "element": [
-        "<AutoComplete",
-        "  value={value}",
-        "  options={options}",
-        "  style={{ width: 200 }}",
-        "  onSelect={onSelect}",
-        "  onSearch={onSearch}",
-        "  onChange={onChange}",
-        "  placeholder='control mode'",
-        "/>"
+    "snippets": {
+      "import": [
+        "import React, { useState } from 'react';",
+        "import { AutoComplete } from 'antd';"
       ],
-      "state": [
-        "state = {",
-        "  value: '',",
-        "  options: []",
-        "}"
-      ],
-      "method": [
-        "onSearch = (searchText) => {",
-        "  const mockVal = (str, repeat = 1) => ({",
-        "    value: str.repeat(repeat),",
-        "  });",
-        "",
-        "  this.setState({",
-        "    options: !searchText ? [] : [mockVal(searchText), mockVal(searchText, 2), mockVal(searchText, 3)],",
-        "  });",
-        "};",
-        "",
-        "onSelect = (data) => {",
-        "  console.log('onSelect', data);",
-        "};",
-        "",
-        "onChange = (data) => {",
-        "  this.setState({",
-        "    value: data",
-        "  });",
-        "};"
-      ]
+      "variable": ["const {\n  Option\n} = AutoComplete;"],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<AutoComplete style={{\n  width: 200\n}} onSearch={handleSearch} placeholder=\"input here\">\n      {result.map(email => <Option key={email} value={email}>\n          {email}\n        </Option>)}\n    </AutoComplete>",
+        "render": {
+          "variable": [
+            "const [result, setResult] = useState([]);",
+            "const handleSearch = value => {\n  let res = [];\n\n  if (!value || value.indexOf('@') >= 0) {\n    res = [];\n  } else {\n    res = ['gmail.com', '163.com', 'qq.com'].map(domain => `${value}@${domain}`);\n  }\n\n  setResult(res);\n};"
+          ],
+          "function": []
+        }
+      }
     },
     "description": "输入框自动完成功能。",
     "componentCode": "antd/autoComplete",

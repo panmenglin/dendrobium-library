@@ -2,18 +2,21 @@
   "面包屑 Breadcrumb": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd Breadcrumb breadcrumb 面包屑",
-    "body": [
-      "<Breadcrumb>",
-      "  <Breadcrumb.Item>Home</Breadcrumb.Item>",
-      "  <Breadcrumb.Item>",
-      "    <a href=''>Application Center</a>",
-      "  </Breadcrumb.Item>",
-      "  <Breadcrumb.Item>",
-      "    <a href=''>Application List</a>",
-      "  </Breadcrumb.Item>",
-      "  <Breadcrumb.Item>An Application</Breadcrumb.Item>",
-      "</Breadcrumb>"
-    ],
+    "snippets": {
+      "import": ["import { Breadcrumb } from 'antd';"],
+      "variable": [],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Breadcrumb>\n    <Breadcrumb.Item>Home</Breadcrumb.Item>\n    <Breadcrumb.Item>\n      <a href=\"\">Application Center</a>\n    </Breadcrumb.Item>\n    <Breadcrumb.Item>\n      <a href=\"\">Application List</a>\n    </Breadcrumb.Item>\n    <Breadcrumb.Item>An Application</Breadcrumb.Item>\n  </Breadcrumb>",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
     "description": "显示当前页面在系统层级结构中的位置，并能向上返回。",
     "componentCode": "antd/breadcrumb",
     "libraryCode": "antd"

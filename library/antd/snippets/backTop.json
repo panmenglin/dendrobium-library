@@ -2,7 +2,23 @@
   "回到顶部 BackTop": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd BackTop backTop backtop 回到顶部",
-    "body": ["<BackTop />"],
+    "snippets": {
+      "import": ["import { BackTop } from 'antd';"],
+      "variable": [
+        "const style = {\n  height: 40,\n  width: 40,\n  lineHeight: '40px',\n  borderRadius: 4,\n  backgroundColor: '#1088e9',\n  color: '#fff',\n  textAlign: 'center',\n  fontSize: 14\n};"
+      ],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<div style={{\n  height: '600vh',\n  padding: 8\n}}>\n    <div>Scroll to bottom</div>\n    <div>Scroll to bottom</div>\n    <div>Scroll to bottom</div>\n    <div>Scroll to bottom</div>\n    <div>Scroll to bottom</div>\n    <div>Scroll to bottom</div>\n    <div>Scroll to bottom</div>\n    <BackTop>\n      <div style={style}>UP</div>\n    </BackTop>\n  </div>",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
     "description": "返回页面顶部的操作按钮。",
     "componentCode": "antd/backTop",
     "libraryCode": "antd"

@@ -1,57 +1,32 @@
 {
-  "antd cascader": {
+  "分页 Pagination": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "prefix": "Cascader",
-    "body": [
-      "cascaderRender = () => {",
-      "  const options = [",
-      "    {",
-      "      value: 'zhejiang',",
-      "      label: 'Zhejiang',",
-      "      children: [",
-      "        {",
-      "          value: 'hangzhou',",
-      "          label: 'Hangzhou',",
-      "          children: [",
-      "            {",
-      "              value: 'xihu',",
-      "              label: 'West Lake',",
-      "            },",
-      "          ],",
-      "        },",
-      "      ],",
-      "    },",
-      "    {",
-      "      value: 'jiangsu',",
-      "      label: 'Jiangsu',",
-      "      children: [",
-      "        {",
-      "          value: 'nanjing',",
-      "          label: 'Nanjing',",
-      "          children: [",
-      "            {",
-      "              value: 'zhonghuamen',",
-      "              label: 'Zhong Hua Men',",
-      "            },",
-      "          ],",
-      "        },",
-      "      ],",
-      "    },",
-      "  ];",
-      "",
-      "  function onChange(value) {",
-      "    console.log(value);",
-      "  }",
-      "",
-      "  return (<Cascader",
-      "    defaultValue={['zhejiang', 'hangzhou', 'xihu']}",
-      "    options={options}",
-      "    onChange={onChange}",
-      "  />)",
-      "}"
-    ],
-    "description": "级联选择",
-    "componentCode": "antd/cascader",
+    "prefix": "antd Pagination pagination 分页",
+    "body": {
+      "element": [
+        "<Pagination",
+        "  showSizeChanger",
+        "  onChange={this.onChange}",
+        "  current={this.state.current}",
+        "  total={$2}",
+        "/>"
+      ],
+      "state": [
+        "state = {",
+        "  current: 3",
+        "}"
+      ],
+      "method": [
+        "onChange = (page) => {",
+        "  console.log(page);",
+        "  this.setState({",
+        "    current: page,",
+        "  });",
+        "}"
+      ]
+    },
+    "description": "页码受控制的分页组件。",
+    "componentCode": "antd/pagination",
     "libraryCode": "antd"
   }
 }

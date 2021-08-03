@@ -2,9 +2,24 @@
   "头像 Avatar": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd Avatar avatar 头像",
-    "body": [
-      "<Avatar shape=\"${1|circle,square}\" size={${2|number,large,small,default|}} src={$3} icon={<UserOutlined />} />"
-    ],
+    "snippets": {
+      "import": [
+        "import { Avatar } from 'antd';",
+        "import { UserOutlined } from '@ant-design/icons';"
+      ],
+      "variable": [],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<>\n    <div>\n      <Avatar size={64} icon={<UserOutlined />} />\n    </div>\n  </>",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
     "description": "用来代表用户或事物，支持图片、图标或字符展示。",
     "componentCode": "antd/avatar",
     "libraryCode": "antd"

@@ -1,0 +1,33 @@
+{
+  "气泡确认框 Popconfirm": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "antd Popconfirm popconfirm 气泡 确认框",
+    "body": {
+      "element": [
+        "<Popconfirm",
+        "  title=\"Are you sure to delete this task?\"",
+        "  onConfirm={confirm}",
+        "  onCancel={cancel}",
+        "  okText=\"Yes\"",
+        "  cancelText=\"No\"",
+        ">",
+        "  <a href=\"#\">Delete</a>",
+        "</Popconfirm>"
+      ],
+      "method": [
+        "confirm = (e) => {",
+        "  console.log(e);",
+        "  message.success('Click on Yes');",
+        "}",
+        "",
+        "cancel = (e) => {",
+        "  console.log(e);",
+        "  message.error('Click on No');",
+        "}"
+      ]
+    },
+    "description": "点击元素，弹出气泡式的确认框。",
+    "componentCode": "antd/popconfirm",
+    "libraryCode": "antd"
+  }
+}
