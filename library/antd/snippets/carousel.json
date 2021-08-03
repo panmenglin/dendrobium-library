@@ -2,37 +2,22 @@
   "走马灯 Carousel": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd Carousel carousel 走马灯",
-    "body": {
-      "element": [
-        "<Carousel afterChange={this.onChange}>",
-        "  <div>",
-        "    <h3 style={this.contentStyle}>1</h3>",
-        "  </div>",
-        "  <div>",
-        "    <h3 style={this.contentStyle}>2</h3>",
-        "  </div>",
-        "  <div>",
-        "    <h3 style={this.contentStyle}>3</h3>",
-        "  </div>",
-        "  <div>",
-        "    <h3 style={this.contentStyle}>4</h3>",
-        "  </div>",
-        "</Carousel>"
+    "snippets": {
+      "import": ["import { Carousel } from 'antd';"],
+      "variable": [
+        "const contentStyle = {\n  height: '160px',\n  color: '#fff',\n  lineHeight: '160px',\n  textAlign: 'center',\n  background: '#364d79'\n};"
       ],
-      "property": [
-        "contentStyle = {",
-        "  height: '160px',",
-        "  color: '#fff',",
-        "  lineHeight: '160px',",
-        "  textAlign: 'center',",
-        "  background: '#364d79',",
-        "};"
-      ],
-      "method": [
-        "onChange = (a, b, c) => {",
-        "  console.log(a, b, c);",
-        "};"
-      ]
+      "function": ["function onChange(a, b, c) {\n  console.log(a, b, c);\n}"],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Carousel afterChange={onChange}>\n    <div>\n      <h3 style={contentStyle}>1</h3>\n    </div>\n    <div>\n      <h3 style={contentStyle}>2</h3>\n    </div>\n    <div>\n      <h3 style={contentStyle}>3</h3>\n    </div>\n    <div>\n      <h3 style={contentStyle}>4</h3>\n    </div>\n  </Carousel>",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
     },
     "description": "旋转木马，一组轮播的区域。",
     "componentCode": "antd/carousel",

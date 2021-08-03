@@ -1,0 +1,27 @@
+{
+  "加载中 Spin": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "antd Spin spin 加载中",
+    "snippets": {
+      "import": [
+        "import { Button, Space, Upload, Popconfirm } from 'antd';",
+        "import { UploadOutlined } from '@ant-design/icons';"
+      ],
+      "variable": [],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Space>\n      Space\n      <Button type=\"primary\">Button</Button>\n      <Upload>\n        <Button>\n          <UploadOutlined /> Click to Upload\n        </Button>\n      </Upload>\n      <Popconfirm title=\"Are you sure delete this task?\" okText=\"Yes\" cancelText=\"No\">\n        <Button>Confirm</Button>\n      </Popconfirm>\n    </Space>",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
+    "description": "相邻组件水平间距。",
+    "componentCode": "antd/spin",
+    "libraryCode": "antd"
+  }
+}

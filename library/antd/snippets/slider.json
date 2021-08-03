@@ -1,0 +1,27 @@
+{
+  "滑动输入条 Slider": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "antd Slider slider 滑动输入条",
+    "snippets": {
+      "import": ["import { Slider, Switch } from 'antd';"],
+      "variable": [],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [
+          "state = {\n  disabled: false\n};",
+          "handleDisabledChange = disabled => {\n  this.setState({\n    disabled\n  });\n};"
+        ],
+        "function": [],
+        "element": "<>\n        <Slider defaultValue={30} disabled={disabled} />\n        <Slider range defaultValue={[20, 50]} disabled={disabled} />\n        Disabled: <Switch size=\"small\" checked={disabled} onChange={this.handleDisabledChange} />\n      </>",
+        "render": {
+          "variable": ["const {\n  disabled\n} = this.state;"],
+          "function": []
+        }
+      }
+    },
+    "description": "滑动型输入器，展示当前值和可选范围。",
+    "componentCode": "antd/slider",
+    "libraryCode": "antd"
+  }
+}

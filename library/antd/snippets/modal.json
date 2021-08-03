@@ -2,56 +2,28 @@
   "对话框 Modal": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd Modal modal 对话框",
-    "body": {
-      "element": [
-        "<Button type=\"primary\" onClick={showModal}>",
-        "  Open Modal",
-        "</Button>",
-        "<Modal",
-        "  title=\"Basic Modal\"",
-        "  visible={isModalVisible}",
-        "  onOk={handleOk}",
-        "  onCancel={handleCancel}",
-        "  footer={[",
-        "    <Button key=\"back\" onClick={this.handleCancel}>",
-        "      Return",
-        "    </Button>,",
-        "    <Button key=\"submit\" type=\"primary\" loading={loading} onClick={this.handleOk}>",
-        "      Submit",
-        "    </Button>,",
-        "    <Button",
-        "      key=\"link\"",
-        "      href=\"https://google.com\"",
-        "      type=\"primary\"",
-        "      loading={loading}",
-        "    >",
-        "      Search on Google",
-        "    </Button>,",
-        "  ]}",
-        ">",
-        "  <p>Some contents...</p>",
-        "  <p>Some contents...</p>",
-        "  <p>Some contents...</p>",
-        "</Modal>"
+    "snippets": {
+      "import": [
+        "import React, { useState } from 'react';",
+        "import { Modal, Button } from 'antd';"
       ],
-      "state": [
-          "state = {",
-          "  isModalVisible: false",
-          "}"
-      ],
-      "method": [
-        "showModal = () => {",
-        "  setIsModalVisible(true);",
-        "};",
-        "",
-        "handleOk = () => {",
-        "  setIsModalVisible(false);",
-        "};",
-        "",
-        "handleCancel = () => {",
-        "  setIsModalVisible(false);",
-        "};"
-      ]
+      "variable": [],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<>\n      <Button type=\"primary\" onClick={showModal}>\n        Open Modal\n      </Button>\n      <Modal title=\"Basic Modal\" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>\n        <p>Some contents...</p>\n        <p>Some contents...</p>\n        <p>Some contents...</p>\n      </Modal>\n    </>",
+        "render": {
+          "variable": [
+            "const [isModalVisible, setIsModalVisible] = useState(false);",
+            "const showModal = () => {\n  setIsModalVisible(true);\n};",
+            "const handleOk = () => {\n  setIsModalVisible(false);\n};",
+            "const handleCancel = () => {\n  setIsModalVisible(false);\n};"
+          ],
+          "function": []
+        }
+      }
     },
     "description": "自定义了页脚的按钮的模态对话框。",
     "componentCode": "antd/modal",

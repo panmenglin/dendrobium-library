@@ -1,17 +1,22 @@
 {
   "标签页 Tabs": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "prefix": "Tabs tabs",
-    "body": [
-      "<Tabs defaultActiveKey=\"$1\" onChange={this.callback}>",
-      "   <Tabs.TabPane tab=\"$3\" key=\"$4\">",
-      "       $5",
-      "   </Tabs.TabPane>",
-      "   <Tabs.TabPane tab=\"$6\" key=\"$7\">",
-      "       $8",
-      "   </Tabs.TabPane>",
-      "</Tabs>"
-    ],
+    "prefix": "antd Tabs tabs 标签页",
+    "snippets": {
+      "import": ["import { Tabs } from 'antd';"],
+      "variable": ["const {\n  TabPane\n} = Tabs;"],
+      "function": ["function callback(key) {\n  console.log(key);\n}"],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Tabs defaultActiveKey=\"1\" onChange={callback}>\n    <TabPane tab=\"Tab 1\" key=\"1\">\n      Content of Tab Pane 1\n    </TabPane>\n    <TabPane tab=\"Tab 2\" key=\"2\">\n      Content of Tab Pane 2\n    </TabPane>\n    <TabPane tab=\"Tab 3\" key=\"3\">\n      Content of Tab Pane 3\n    </TabPane>\n  </Tabs>",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
     "description": "选项卡切换组件。",
     "componentCode": "antd/tabs",
     "libraryCode": "antd"

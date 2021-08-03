@@ -2,13 +2,21 @@
   "卡片 Card": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd Card card 卡片",
-    "body": [
-      "<Card size=\"${1|default,small|}\" title=\"card\" extra={<a href=\"#\">More</a>} style={{ width: 300 }}>",
-      "  <p>Card content</p>",
-      "  <p>Card content</p>",
-      "  <p>Card content</p>",
-      "</Card>"
-    ],
+    "snippets": {
+      "import": ["import { Card } from 'antd';"],
+      "variable": [],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<>\n    <Card title=\"Default size card\" extra={<a href=\"#\">More</a>} style={{\n    width: 300\n  }}>\n      <p>Card content</p>\n      <p>Card content</p>\n      <p>Card content</p>\n    </Card>\n    <Card size=\"small\" title=\"Small size card\" extra={<a href=\"#\">More</a>} style={{\n    width: 300\n  }}>\n      <p>Card content</p>\n      <p>Card content</p>\n      <p>Card content</p>\n    </Card>\n  </>",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
     "description": "通用卡片容器。",
     "componentCode": "antd/card",
     "libraryCode": "antd"
@@ -16,28 +24,24 @@
   "卡片 更多内容配置 Card": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd Card card 卡片",
-    "body": [
-      "<Card",
-      "  style={{ width: 300 }}",
-      "  cover={",
-      "    <img",
-      "    alt=\"example\"",
-      "    src=\"https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png\"",
-      "    />",
-      "  }",
-      "  actions={[",
-      "    <SettingOutlined key=\"setting\" />,",
-      "    <EditOutlined key=\"edit\" />,",
-      "    <EllipsisOutlined key=\"ellipsis\" />,",
-      "  ]}",
-      ">",
-      "  <Meta",
-      "    avatar={<Avatar src=\"https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png\" />}",
-      "    title=\"Card title\"",
-      "    description=\"This is the description\"",
-      "  />",
-      "</Card>"
-    ],
+    "snippets": {
+      "import": [
+        "import { Card, Avatar } from 'antd';",
+        "import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';"
+      ],
+      "variable": ["const {\n  Meta\n} = Card;"],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Card style={{\n  width: 300\n}} cover={<img alt=\"example\" src=\"https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png\" />} actions={[<SettingOutlined key=\"setting\" />, <EditOutlined key=\"edit\" />, <EllipsisOutlined key=\"ellipsis\" />]}>\n    <Meta avatar={<Avatar src=\"https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png\" />} title=\"Card title\" description=\"This is the description\" />\n  </Card>",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
     "description": "一种支持封面、头像、标题和描述信息的卡片。",
     "componentCode": "antd/card",
     "libraryCode": "antd"

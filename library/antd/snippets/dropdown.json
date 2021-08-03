@@ -2,36 +2,25 @@
   "下拉菜单 Dropdown": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd Dropdown dropdown 下拉菜单",
-    "body": {
-      "element": [
-        "<Dropdown overlay={menu}>",
-        "  <a className=\"ant-dropdown-link\" onClick={e => e.preventDefault()}>",
-        "    Hover me <DownOutlined />",
-        "  </a>",
-        "</Dropdown>"
+    "snippets": {
+      "import": [
+        "import { Menu, Dropdown } from 'antd';",
+        "import { DownOutlined } from '@ant-design/icons';"
       ],
-      "property": [
-        "menu = (",
-        "  <Menu>",
-        "    <Menu.Item>",
-        "      <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.antgroup.com\">",
-        "        1st menu item",
-        "      </a>",
-        "    </Menu.Item>",
-        "    <Menu.Item icon={<DownOutlined />} disabled>",
-        "      <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.aliyun.com\">",
-        "        2nd menu item (disabled)",
-        "      </a>",
-        "    </Menu.Item>",
-        "    <Menu.Item disabled>",
-        "      <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.luohanacademy.com\">",
-        "        3rd menu item (disabled)",
-        "      </a>",
-        "    </Menu.Item>",
-        "    <Menu.Item danger>a danger item</Menu.Item>",
-        "  </Menu>",
-        ");"
-      ]
+      "variable": [
+        "const menu = <Menu>\n    <Menu.Item>\n      <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.antgroup.com\">\n        1st menu item\n      </a>\n    </Menu.Item>\n    <Menu.Item icon={<DownOutlined />} disabled>\n      <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.aliyun.com\">\n        2nd menu item (disabled)\n      </a>\n    </Menu.Item>\n    <Menu.Item disabled>\n      <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.luohanacademy.com\">\n        3rd menu item (disabled)\n      </a>\n    </Menu.Item>\n    <Menu.Item danger>a danger item</Menu.Item>\n  </Menu>;"
+      ],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Dropdown overlay={menu}>\n    <a className=\"ant-dropdown-link\" onClick={e => e.preventDefault()}>\n      Hover me <DownOutlined />\n    </a>\n  </Dropdown>",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
     },
     "description": "向下弹出的列表。",
     "componentCode": "antd/dropdown",

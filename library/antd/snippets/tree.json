@@ -1,0 +1,29 @@
+{
+  "树形控件 Tree": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "antd Tree tree 树形控件",
+    "snippets": {
+      "import": ["import { Tree } from 'antd';"],
+      "variable": [
+        "const treeData = [{\n  title: 'parent 1',\n  key: '0-0',\n  children: [{\n    title: 'parent 1-0',\n    key: '0-0-0',\n    disabled: true,\n    children: [{\n      title: 'leaf',\n      key: '0-0-0-0',\n      disableCheckbox: true\n    }, {\n      title: 'leaf',\n      key: '0-0-0-1'\n    }]\n  }, {\n    title: 'parent 1-1',\n    key: '0-0-1',\n    children: [{\n      title: <span style={{\n        color: '#1890ff'\n      }}>sss</span>,\n      key: '0-0-1-0'\n    }]\n  }]\n}];"
+      ],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Tree checkable defaultExpandedKeys={['0-0-0', '0-0-1']} defaultSelectedKeys={['0-0-0', '0-0-1']} defaultCheckedKeys={['0-0-0', '0-0-1']} onSelect={onSelect} onCheck={onCheck} treeData={treeData} />",
+        "render": {
+          "variable": [
+            "const onSelect = (selectedKeys: React.Key[], info: any) => {\n  console.log('selected', selectedKeys, info);\n};",
+            "const onCheck = (checkedKeys: React.Key[], info: any) => {\n  console.log('onCheck', checkedKeys, info);\n};"
+          ],
+          "function": []
+        }
+      }
+    },
+    "description": "多层次的结构列表。",
+    "componentCode": "antd/tree",
+    "libraryCode": "antd"
+  }
+}

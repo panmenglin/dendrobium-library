@@ -2,11 +2,23 @@
   "进度条 Progress": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd Progress progress 进度条",
-    "body": [
-      "<Progress percent={$1} type=\"${2|line,circle,dashboard|}\" status=\"${3|normal,success,exception,active|}\" />"
-    ],
+    "snippets": {
+      "import": ["import { Progress } from 'antd';"],
+      "variable": [],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<>\n    <Progress percent={30} />\n    <Progress percent={50} status=\"active\" />\n    <Progress percent={70} status=\"exception\" />\n    <Progress percent={100} />\n    <Progress percent={50} showInfo={false} />\n  </>",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
     "description": "展示操作的当前进度。",
-    "componentCode": "antd/popover",
+    "componentCode": "antd/progress",
     "libraryCode": "antd"
   }
 }

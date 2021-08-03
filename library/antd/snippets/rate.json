@@ -1,0 +1,24 @@
+{
+  "评分 Rate": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "antd Rate rate 评分",
+    "snippets": {
+      "import": ["import { Rate } from 'antd';"],
+      "variable": [],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Rate />",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
+    "description": "评分组件。",
+    "componentCode": "antd/rate",
+    "libraryCode": "antd"
+  }
+}

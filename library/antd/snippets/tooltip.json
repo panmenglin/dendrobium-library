@@ -1,12 +1,24 @@
 {
-	"antd tooltip": {
-		"scope": "javascript,typescript,javascriptreact,typescriptreact",
-		"prefix": "Tooltip",
-		"body": [
-			"<Tooltip title='$1'>",
-			"   $2",
-			"</Tooltip>"
-		],
-		"description": "简单的文字提示气泡框。"
-	}
+  "文字提示 Tooltip": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "antd Tooltip tooltip 文字提示",
+    "snippets": {
+      "import": ["import { Tooltip } from 'antd';"],
+      "variable": [],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Tooltip title=\"prompt text\">\n    <span>Tooltip will show on mouse enter.</span>\n  </Tooltip>",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
+    "description": "简单的文字提示气泡框。",
+    "componentCode": "antd/tooltip",
+    "libraryCode": "antd"
+  }
 }

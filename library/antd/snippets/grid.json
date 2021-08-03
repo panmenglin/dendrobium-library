@@ -2,10 +2,21 @@
   "栅格 Grid": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd Grid grid Row row Col col 栅格",
-    "body": [
-      "<Row gutter={$1}>",
-      "   <Col span={${2| ,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24|}}>$3</Col>",
-      "</Row>"],
+    "snippets": {
+      "import": ["import { Row, Col } from 'antd';"],
+      "variable": [],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Row gutter={$1}>\n    <Col span={${2| ,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24|}}>¥3</Col>\n  </Row>",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
     "description": "栅格",
     "componentCode": "antd/grid",
     "libraryCode": "antd"
@@ -13,11 +24,21 @@
   "栅格二列 Grid": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd Grid grid Row row Col col 栅格",
-    "body": [
-      "<Row gutter={$1}>",
-      "   <Col span={12}></Col>",
-      "   <Col span={12}></Col>",
-      "</Row>"],
+    "snippets": {
+      "import": ["import { Row, Col } from 'antd';"],
+      "variable": [],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Row>\n      <Col span={12}></Col>\n      <Col span={12}></Col>\n  </Row>",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
     "description": "栅格",
     "componentCode": "antd/grid",
     "libraryCode": "antd"
@@ -25,12 +46,21 @@
   "栅格三列 Grid": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd Grid grid Row row Col col 栅格",
-    "body": [
-      "<Row gutter={$1}>",
-      "   <Col span={8}></Col>",
-      "   <Col span={8}></Col>",
-      "   <Col span={8}></Col>",
-      "</Row>"],
+    "snippets": {
+      "import": ["import { Row, Col } from 'antd';"],
+      "variable": [],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Row>\n      <Col span={8}></Col>\n      <Col span={8}></Col>\n      <Col span={8}></Col>\n  </Row>",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
     "description": "栅格",
     "componentCode": "antd/grid",
     "libraryCode": "antd"
@@ -38,13 +68,21 @@
   "栅格四列 Grid": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd Grid grid Row row Col col 栅格",
-    "body": [
-      "<Row gutter={$1}>",
-      "   <Col span={6}></Col>",
-      "   <Col span={6}></Col>",
-      "   <Col span={6}></Col>",
-      "   <Col span={6}></Col>",
-      "</Row>"],
+    "snippets": {
+      "import": ["import { Row, Col } from 'antd';"],
+      "variable": [],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Row>\n      <Col span={6}></Col>\n      <Col span={6}></Col>\n      <Col span={6}></Col>\n      <Col span={6}></Col>\n  </Row>",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
     "description": "栅格",
     "componentCode": "antd/grid",
     "libraryCode": "antd"

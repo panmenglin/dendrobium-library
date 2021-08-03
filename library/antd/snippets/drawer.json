@@ -2,43 +2,27 @@
   "抽屉 Drawer": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd Drawer drawer 抽屉",
-    "body": {
-      "element": [
-        "<>",
-        "  <Button type=\"primary\" onClick={this.showDrawer}>",
-        "    Open",
-        "  </Button>",
-        "  <Drawer",
-        "    title=\"Basic Drawer\"",
-        "    placement=\"right\"",
-        "    closable={false}",
-        "    onClose={onClose}",
-        "    visible={this.visible}",
-        "  >",
-        "    <p>Some contents...</p>",
-        "    <p>Some contents...</p>",
-        "    <p>Some contents...</p>",
-        "  </Drawer>",
-        "</>"
+    "snippets": {
+      "import": [
+        "import React, { useState } from 'react';",
+        "import { Drawer, Button } from 'antd';"
       ],
-      "state": [
-        "state = {",
-        "  visible: false",
-        "}"
-      ],
-      "method": [
-        "showDrawer = () => {",
-        "  this.setState({",
-        "    visible: true",
-        "  })",
-        "};",
-        "",
-        "onClose = () => {",
-        "  this.setState({",
-        "    visible: false",
-        "  })",
-        "};"
-      ]
+      "variable": [],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<>\n      <Button type=\"primary\" onClick={showDrawer}>\n        Open\n      </Button>\n      <Drawer title=\"Basic Drawer\" placement=\"right\" closable={false} onClose={onClose} visible={visible}>\n        <p>Some contents...</p>\n        <p>Some contents...</p>\n        <p>Some contents...</p>\n      </Drawer>\n    </>",
+        "render": {
+          "variable": [
+            "const [visible, setVisible] = useState(false);",
+            "const showDrawer = () => {\n  setVisible(true);\n};",
+            "const onClose = () => {\n  setVisible(false);\n};"
+          ],
+          "function": []
+        }
+      }
     },
     "description": "屏幕边缘滑出的浮层面板。",
     "componentCode": "antd/drawer",

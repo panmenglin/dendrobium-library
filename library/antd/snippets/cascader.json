@@ -1,59 +1,28 @@
 {
-  "级联选择 动态加载 Calendar": {
+  "级联选择 动态加载 Cascader": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd, Cascader, cascader, select, 级联选择",
-    "body": [
-      "<Cascader",
-      "  options={this.options}",
-      "  loadData={this.loadData}",
-      "  onChange={this.onChange}",
-      "  changeOnSelect",
-      "/>"
-    ],
-    "state": [
-      "state = {",
-      "  options: [",
-      "    {",
-      "      value: 'zhejiang',",
-      "      label: 'Zhejiang',",
-      "      isLeaf: false,",
-      "    },",
-      "    {",
-      "      value: 'jiangsu',",
-      "      label: 'Jiangsu',",
-      "      isLeaf: false,",
-      "    },",
-      "  ];",
-      "}"
-    ],
-    "method": [
-      "onChange = (value, selectedOptions) => {",
-      "  console.log(value, selectedOptions);",
-      "};",
-      "",
-      "loadData = selectedOptions => {",
-      "  const targetOption = selectedOptions[selectedOptions.length - 1];",
-      "  targetOption.loading = true;",
-      "",
-      "  // load options lazily",
-      "  setTimeout(() => {",
-      "    targetOption.loading = false;",
-      "    targetOption.children = [",
-      "      {",
-      "        label: `${targetOption.label} Dynamic 1`,",
-      "        value: 'dynamic1',",
-      "      },",
-      "      {",
-      "        label: `${targetOption.label} Dynamic 2`,",
-      "        value: 'dynamic2',",
-      "      },",
-      "    ];",
-      "    this.setState({",
-      "      options: [...this.state.options]",
-      "    });",
-      "  }, 1000);",
-      "};"
-    ],
+    "snippets": {
+      "import": ["import { Cascader } from 'antd';"],
+      "variable": [
+        "const optionLists = [{\n  value: 'zhejiang',\n  label: 'Zhejiang',\n  isLeaf: false\n}, {\n  value: 'jiangsu',\n  label: 'Jiangsu',\n  isLeaf: false\n}];"
+      ],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Cascader options={options} loadData={loadData} onChange={onChange} changeOnSelect />",
+        "render": {
+          "variable": [
+            "const [options, setOptions] = React.useState(optionLists);",
+            "const onChange = (value, selectedOptions) => {\n  console.log(value, selectedOptions);\n};",
+            "const loadData = selectedOptions => {\n  const targetOption = selectedOptions[selectedOptions.length - 1];\n  targetOption.loading = true; // load options lazily\n\n  setTimeout(() => {\n    targetOption.loading = false;\n    targetOption.children = [{\n      label: `${targetOption.label} Dynamic 1`,\n      value: 'dynamic1'\n    }, {\n      label: `${targetOption.label} Dynamic 2`,\n      value: 'dynamic2'\n    }];\n    setOptions([...options]);\n  }, 1000);\n};"
+          ],
+          "function": []
+        }
+      }
+    },
     "description": "级联选择 动态加载",
     "componentCode": "antd/cascader",
     "libraryCode": "antd"

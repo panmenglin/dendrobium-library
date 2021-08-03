@@ -1,0 +1,30 @@
+{
+  "树选择 TreeSelect": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "antd TreeSelect treeSelect 树选择",
+    "snippets": {
+      "import": [
+        "import React, { useState } from 'react';",
+        "import { TreeSelect } from 'antd';"
+      ],
+      "variable": ["const {\n  TreeNode\n} = TreeSelect;"],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<TreeSelect showSearch style={{\n  width: '100%'\n}} value={value} dropdownStyle={{\n  maxHeight: 400,\n  overflow: 'auto'\n}} placeholder=\"Please select\" allowClear treeDefaultExpandAll onChange={onChange}>\n      <TreeNode value=\"parent 1\" title=\"parent 1\">\n        <TreeNode value=\"parent 1-0\" title=\"parent 1-0\">\n          <TreeNode value=\"leaf1\" title=\"leaf1\" />\n          <TreeNode value=\"leaf2\" title=\"leaf2\" />\n        </TreeNode>\n        <TreeNode value=\"parent 1-1\" title=\"parent 1-1\">\n          <TreeNode value=\"leaf3\" title={<b style={{\n        color: '#08c'\n      }}>leaf3</b>} />\n        </TreeNode>\n      </TreeNode>\n    </TreeSelect>",
+        "render": {
+          "variable": [
+            "const [value, setValue] = useState(undefined);",
+            "const onChange = () => {\n  setValue(value);\n};"
+          ],
+          "function": []
+        }
+      }
+    },
+    "description": "树型选择控件。",
+    "componentCode": "antd/treeSelect",
+    "libraryCode": "antd"
+  }
+}

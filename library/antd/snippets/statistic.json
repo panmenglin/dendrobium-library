@@ -1,0 +1,24 @@
+{
+  "统计数值 Statistic": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "antd Statistic statistic 统计数值",
+    "snippets": {
+      "import": ["import { Statistic, Row, Col, Button } from 'antd';"],
+      "variable": [],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Row gutter={16}>\n    <Col span={12}>\n      <Statistic title=\"Active Users\" value={112893} />\n    </Col>\n    <Col span={12}>\n      <Statistic title=\"Account Balance (CNY)\" value={112893} precision={2} />\n      <Button style={{\n      marginTop: 16\n    }} type=\"primary\">\n        Recharge\n      </Button>\n    </Col>\n    <Col span={12}>\n      <Statistic title=\"Active Users\" value={112893} loading />\n    </Col>\n  </Row>",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
+    "description": "展示统计数值。",
+    "componentCode": "antd/statistic",
+    "libraryCode": "antd"
+  }
+}

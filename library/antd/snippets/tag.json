@@ -1,10 +1,27 @@
 {
-	"antd tabs": {
-		"scope": "javascript,typescript,javascriptreact,typescriptreact",
-		"prefix": "Tag",
-		"body": [
-			"<Tag>$1</Tag>"
-		],
-		"description": "进行标记和分类的小标签。"
-	}
+  "标签 Tag": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "antd Tag tag 标签",
+    "snippets": {
+      "import": ["import { Tag } from 'antd';"],
+      "variable": [],
+      "function": [
+        "function log(e) {\n  console.log(e);\n}",
+        "function preventDefault(e) {\n  e.preventDefault();\n  console.log('Clicked! But prevent default.');\n}"
+      ],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<>\n    <Tag>Tag 1</Tag>\n    <Tag>\n      <a href=\"https://github.com/ant-design/ant-design/issues/1862\">Link</a>\n    </Tag>\n    <Tag closable onClose={log}>\n      Tag 2\n    </Tag>\n    <Tag closable onClose={preventDefault}>\n      Prevent Default\n    </Tag>\n  </>",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
+    "description": "进行标记和分类的小标签。",
+    "componentCode": "antd/tag",
+    "libraryCode": "antd"
+  }
 }

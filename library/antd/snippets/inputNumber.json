@@ -2,7 +2,23 @@
   "数字输入框 InputNumber": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd InputNumber inputNumber Inputnumber 数字输入框",
-    "body": ["<InputNumber min={$1} max={$2} defaultValue={$3} />"],
+    "snippets": {
+      "import": ["import { InputNumber } from 'antd';"],
+      "variable": [],
+      "function": [
+        "function onChange(value) {\n  console.log('changed', value);\n}"
+      ],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<InputNumber min={1} max={10} defaultValue={3} onChange={onChange} />",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
     "description": "通过鼠标或键盘，输入范围内的数值。",
     "componentCode": "antd/inputNumber",
     "libraryCode": "antd"
@@ -10,13 +26,23 @@
   "数字输入框 格式化展示 InputNumber": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd InputNumber inputNumber Inputnumber 数字输入框",
-    "body": [
-      "<InputNumber",
-      "  defaultValue={1000}",
-      "  formatter={value => `$ ${value}`.replace(/B(?=(d{3})+(?!d))/g, ',')}",
-      "  parser={value => value.replace(/$s?|(,*)/g, '')}",
-      "/>"
-    ],
+    "snippets": {
+      "import": ["import { InputNumber } from 'antd';"],
+      "variable": [],
+      "function": [
+        "function onChange(value) {\n  console.log('changed', value);\n}"
+      ],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<>\n    <InputNumber defaultValue={1000} formatter={value => `$ ${value}`.replace(/\\B(?=(\\d{3})+(?!\\d))/g, ',')} parser={value => value.replace(/\\$\\s?|(,*)/g, '')} onChange={onChange} />\n    <InputNumber defaultValue={100} min={0} max={100} formatter={value => `${value}%`} parser={value => value.replace('%', '')} onChange={onChange} />\n  </>",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
     "description": "通过 formatter 格式化数字，以展示具有具体含义的数据，往往需要配合 parser 一起使用。",
     "componentCode": "antd/inputNumber",
     "libraryCode": "antd"

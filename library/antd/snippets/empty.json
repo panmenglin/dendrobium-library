@@ -2,7 +2,21 @@
   "空状态 Empty": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd Empty empty 空状态",
-    "body": ["<Empty />"],
+    "snippets": {
+      "import": ["import { Empty } from 'antd';"],
+      "variable": [],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Empty />",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
     "description": "空状态时的展示占位图。",
     "componentCode": "antd/empty",
     "libraryCode": "antd"
@@ -10,21 +24,21 @@
   "空状态 自定义 Empty": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd Empty empty 空状态",
-    "body": [
-        "<Empty",
-        "  image=\"https://gw.alipayobjects.com/zos/antfincdn/ZHrcdLPrvN/empty.svg\"",
-        "  imageStyle={{",
-        "    height: 60,",
-        "  }}",
-        "  description={",
-        "    <span>",
-        "      Customize <a href=\"#API\">Description</a>",
-        "    </span>",
-        "  }",
-        ">",
-        "  <Button type=\"primary\">Create Now</Button>",
-        "</Empty>"
-    ],
+    "snippets": {
+      "import": ["import { Empty, Button } from 'antd';"],
+      "variable": [],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Empty image=\"https://gw.alipayobjects.com/zos/antfincdn/ZHrcdLPrvN/empty.svg\" imageStyle={{\n  height: 60\n}} description={<span>\n        Customize <a href=\"#API\">Description</a>\n      </span>}>\n    <Button type=\"primary\">Create Now</Button>\n  </Empty>",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
     "description": "自定义图片链接、图片大小、描述、附属内容。",
     "componentCode": "antd/empty",
     "libraryCode": "antd"

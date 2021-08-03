@@ -2,52 +2,23 @@
   "表单 Form": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd Form form 表单",
-    "body": {
-      "element": [
-        "<Form",
-        "  name=\"basic\"",
-        "  labelCol={{ span: 8 }}",
-        "  wrapperCol={{ span: 16 }}",
-        "  initialValues={{ remember: true }}",
-        "  onFinish={onFinish}",
-        "  onFinishFailed={onFinishFailed}",
-        ">",
-        "  <Form.Item",
-        "    label=\"Username\"",
-        "    name=\"username\"",
-        "    rules={[{ required: true, message: 'Please input your username!' }]}",
-        "  >",
-        "    <Input />",
-        "  </Form.Item>",
-        "",
-        "  <Form.Item",
-        "    label=\"Password\"",
-        "    name=\"password\"",
-        "    rules={[{ required: true, message: 'Please input your password!' }]}",
-        "  >",
-        "    <Input.Password />",
-        "  </Form.Item>",
-        "",
-        "<Form.Item name=\"remember\" valuePropName=\"checked\" wrapperCol={{ offset: 8, span: 16 }}>",
-        "  <Checkbox>Remember me</Checkbox>",
-        "</Form.Item>",
-        "",
-        "<Form.Item wrapperCol={{ offset: 8, span: 16 }}>",
-        "  <Button type=\"primary\" htmlType=\"submit\">",
-        "    Submit",
-        "  </Button>",
-        "</Form.Item>",
-        "</Form>"
-      ],
-      "method": [
-        "onFinish = (values: any) => {",
-        "  console.log('Success:', values);",
-        "};",
-        "",
-        "onFinishFailed = (errorInfo: any) => {",
-        "  console.log('Failed:', errorInfo);",
-        "};"
-      ]
+    "snippets": {
+      "import": ["import { Form, Input, Button, Checkbox } from 'antd';"],
+      "variable": [],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Form name=\"basic\" labelCol={{\n  span: 8\n}} wrapperCol={{\n  span: 16\n}} initialValues={{\n  remember: true\n}} onFinish={onFinish} onFinishFailed={onFinishFailed}>\n      <Form.Item label=\"Username\" name=\"username\" rules={[{\n    required: true,\n    message: 'Please input your username!'\n  }]}>\n        <Input />\n      </Form.Item>\n\n      <Form.Item label=\"Password\" name=\"password\" rules={[{\n    required: true,\n    message: 'Please input your password!'\n  }]}>\n        <Input.Password />\n      </Form.Item>\n\n      <Form.Item name=\"remember\" valuePropName=\"checked\" wrapperCol={{\n    offset: 8,\n    span: 16\n  }}>\n        <Checkbox>Remember me</Checkbox>\n      </Form.Item>\n\n      <Form.Item wrapperCol={{\n    offset: 8,\n    span: 16\n  }}>\n        <Button type=\"primary\" htmlType=\"submit\">\n          Submit\n        </Button>\n      </Form.Item>\n    </Form>",
+        "render": {
+          "variable": [
+            "const onFinish = (values: any) => {\n  console.log('Success:', values);\n};",
+            "const onFinishFailed = (errorInfo: any) => {\n  console.log('Failed:', errorInfo);\n};"
+          ],
+          "function": []
+        }
+      }
     },
     "description": "高性能表单控件，自带数据域管理。包含数据录入、校验以及对应样式。",
     "componentCode": "antd/form",
@@ -56,82 +27,33 @@
   "表单 动态增减 Form": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd Form form 表单",
-    "body": {
-      "element": [
-        "<Form form={this.form} name=\"dynamic_form_nest_item\" onFinish={this.onFinish} autoComplete=\"off\">",
-        "  <Form.Item name=\"area\" label=\"Area\" rules={[{ required: true, message: 'Missing area' }]}>",
-        "    <Select options={areas} onChange={this.handleChange} />",
-        "  </Form.Item>",
-        "  <Form.List name=\"sights\">",
-        "    {(fields, { add, remove }) => (",
-        "      <>",
-        "        {fields.map(field => (",
-        "          <Space key={field.key} align=\"baseline\">",
-        "            <Form.Item",
-        "              noStyle",
-        "              shouldUpdate={(prevValues, curValues) =>",
-        "                prevValues.area !== curValues.area || prevValues.sights !== curValues.sights",
-        "              }",
-        "            >",
-        "              {() => (",
-        "                <Form.Item",
-        "                  {...field}",
-        "                  label=\"Sight\"",
-        "                  name={[field.name, 'sight']}",
-        "                  fieldKey={[field.fieldKey, 'sight']}",
-        "                  rules={[{ required: true, message: 'Missing sight' }]}",
-        "                >",
-        "                  <Select disabled={!form.getFieldValue('area')} style={{ width: 130 }}>",
-        "                    {(sights[form.getFieldValue('area')] || []).map(item => (",
-        "                      <Option key={item} value={item}>",
-        "                        {item}",
-        "                      </Option>",
-        "                    ))}",
-        "                  </Select>",
-        "                </Form.Item>",
-        "              )}",
-        "            </Form.Item>",
-        "            <Form.Item",
-        "              {...field}",
-        "              label=\"Price\"",
-        "              name={[field.name, 'price']}",
-        "              fieldKey={[field.fieldKey, 'price']}",
-        "              rules={[{ required: true, message: 'Missing price' }]}",
-        "            >",
-        "              <Input />",
-        "            </Form.Item>",
-        "",
-        "            <MinusCircleOutlined onClick={() => remove(field.name)} />",
-        "          </Space>",
-        "        ))}",
-        "",
-        "        <Form.Item>",
-        "          <Button type=\"dashed\" onClick={() => add()} block icon={<PlusOutlined />}>",
-        "            Add sights",
-        "          </Button>",
-        "        </Form.Item>",
-        "      </>",
-        "    )}",
-        "  </Form.List>",
-        "  <Form.Item>",
-        "    <Button type=\"primary\" htmlType=\"submit\">",
-        "      Submit",
-        "    </Button>",
-        "  </Form.Item>",
-        "</Form>"
+    "snippets": {
+      "import": [
+        "import { Form, Input, Button, Space, Select } from 'antd';",
+        "import { MinusCircleOutlined, PlusOutlined } from '@ant-design/icons';"
       ],
-      "property": ["[form] = Form.useForm();"],
-      "method": [
-        "onFinish = (values) => {",
-        "  console.log('Received values of form:', values);",
-        "};",
-        "",
-        "handleChange = () => {",
-        "  form.setFieldsValue({ sights: [] });",
-        "};"
-      ]
+      "variable": [
+        "const {\n  Option\n} = Select;",
+        "const areas = [{\n  label: 'Beijing',\n  value: 'Beijing'\n}, {\n  label: 'Shanghai',\n  value: 'Shanghai'\n}];",
+        "const sights = {\n  Beijing: ['Tiananmen', 'Great Wall'],\n  Shanghai: ['Oriental Pearl', 'The Bund']\n};"
+      ],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Form form={form} name=\"dynamic_form_nest_item\" onFinish={onFinish} autoComplete=\"off\">\n      <Form.Item name=\"area\" label=\"Area\" rules={[{\n    required: true,\n    message: 'Missing area'\n  }]}>\n        <Select options={areas} onChange={handleChange} />\n      </Form.Item>\n      <Form.List name=\"sights\">\n        {(fields, {\n      add,\n      remove\n    }) => <>\n            {fields.map(field => <Space key={field.key} align=\"baseline\">\n                <Form.Item noStyle shouldUpdate={(prevValues, curValues) => prevValues.area !== curValues.area || prevValues.sights !== curValues.sights}>\n                  {() => <Form.Item {...field} label=\"Sight\" name={[field.name, 'sight']} fieldKey={[field.fieldKey, 'sight']} rules={[{\n            required: true,\n            message: 'Missing sight'\n          }]}>\n                      <Select disabled={!form.getFieldValue('area')} style={{\n              width: 130\n            }}>\n                        {(sights[form.getFieldValue('area')] || []).map(item => <Option key={item} value={item}>\n                            {item}\n                          </Option>)}\n                      </Select>\n                    </Form.Item>}\n                </Form.Item>\n                <Form.Item {...field} label=\"Price\" name={[field.name, 'price']} fieldKey={[field.fieldKey, 'price']} rules={[{\n          required: true,\n          message: 'Missing price'\n        }]}>\n                  <Input />\n                </Form.Item>\n\n                <MinusCircleOutlined onClick={() => remove(field.name)} />\n              </Space>)}\n\n            <Form.Item>\n              <Button type=\"dashed\" onClick={() => add()} block icon={<PlusOutlined />}>\n                Add sights\n              </Button>\n            </Form.Item>\n          </>}\n      </Form.List>\n      <Form.Item>\n        <Button type=\"primary\" htmlType=\"submit\">\n          Submit\n        </Button>\n      </Form.Item>\n    </Form>",
+        "render": {
+          "variable": [
+            "const [form] = Form.useForm();",
+            "const onFinish = values => {\n  console.log('Received values of form:', values);\n};",
+            "const handleChange = () => {\n  form.setFieldsValue({\n    sights: []\n  });\n};"
+          ],
+          "function": []
+        }
+      }
     },
-    "description": "高性能表单控件，自带数据域管理。包含数据录入、校验以及对应样式。",
+    "description": "这个例子演示了一个表单中包含多个表单控件的情况。",
     "componentCode": "antd/form",
     "libraryCode": "antd"
   }

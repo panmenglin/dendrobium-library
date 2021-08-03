@@ -2,28 +2,20 @@
   "分页 Pagination": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd Pagination pagination 分页",
-    "body": {
-      "element": [
-        "<Pagination",
-        "  showSizeChanger",
-        "  onChange={this.onChange}",
-        "  current={this.state.current}",
-        "  total={$2}",
-        "/>"
-      ],
-      "state": [
-        "state = {",
-        "  current: 3",
-        "}"
-      ],
-      "method": [
-        "onChange = (page) => {",
-        "  console.log(page);",
-        "  this.setState({",
-        "    current: page,",
-        "  });",
-        "}"
-      ]
+    "snippets": {
+      "import": ["import { Pagination } from 'antd';"],
+      "variable": [],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<>\n    <Pagination total={85} showSizeChanger showQuickJumper showTotal={total => `Total ${total} items`} />\n  </>",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
     },
     "description": "页码受控制的分页组件。",
     "componentCode": "antd/pagination",

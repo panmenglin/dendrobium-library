@@ -1,0 +1,27 @@
+{
+  "单选框 Radio": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "antd Radio radio 单选框",
+    "snippets": {
+      "import": ["import { Radio } from 'antd';"],
+      "variable": [],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Radio.Group onChange={onChange} value={value}>\n      <Radio value={1}>A</Radio>\n      <Radio value={2}>B</Radio>\n      <Radio value={3}>C</Radio>\n      <Radio value={4}>D</Radio>\n    </Radio.Group>",
+        "render": {
+          "variable": [
+            "const [value, setValue] = React.useState(1);",
+            "const onChange = e => {\n  console.log('radio checked', e.target.value);\n  setValue(e.target.value);\n};"
+          ],
+          "function": []
+        }
+      }
+    },
+    "description": "一组互斥的 Radio 配合使用。",
+    "componentCode": "antd/radio",
+    "libraryCode": "antd"
+  }
+}

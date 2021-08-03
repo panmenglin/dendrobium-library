@@ -1,15 +1,23 @@
 {
-  "antd steps": {
+  "步骤条 Steps": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "prefix": "Steps",
-    "body": [
-      "<Steps current={1}>",
-      "  <Step title='Finished' description='This is a description.' />",
-      "  <Step title='In Progress' subTitle='Left 00:00:08' description='This is a description.' />",
-      "  <Step title='Waiting' description='This is a description.' />",
-      "</Steps>"
-    ],
-    "description": "步骤条",
+    "prefix": "antd Steps steps 步骤条",
+    "snippets": {
+      "import": ["import { Steps } from 'antd';"],
+      "variable": ["const {\n  Step\n} = Steps;"],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Steps current={1}>\n    <Step title=\"Finished\" description=\"This is a description.\" />\n    <Step title=\"In Progress\" subTitle=\"Left 00:00:08\" description=\"This is a description.\" />\n    <Step title=\"Waiting\" description=\"This is a description.\" />\n  </Steps>",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
+    "description": "引导用户按照流程完成任务的导航条。",
     "componentCode": "antd/steps",
     "libraryCode": "antd"
   }

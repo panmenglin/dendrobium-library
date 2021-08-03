@@ -2,12 +2,21 @@
   "图片 Image": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd Image image 图片",
-    "body": [
-      "<Image",
-      "  width={200}",
-      "  src=\"https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png\"",
-      "/>"
-    ],
+    "snippets": {
+      "import": ["import { Image } from 'antd';"],
+      "variable": [],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Image width={200} src=\"https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png\" />",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
     "description": "图片",
     "componentCode": "antd/image",
     "libraryCode": "antd"

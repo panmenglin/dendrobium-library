@@ -1,0 +1,24 @@
+{
+  "骨架屏 Skeleton": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "antd Skeleton skeleton 骨架屏",
+    "snippets": {
+      "import": ["import { Skeleton } from 'antd';"],
+      "variable": [],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Skeleton />",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
+    "description": "在需要等待加载内容的位置提供一个占位图形组合。",
+    "componentCode": "antd/skeleton",
+    "libraryCode": "antd"
+  }
+}

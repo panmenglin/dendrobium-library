@@ -1,9 +1,26 @@
 {
-  "antd space": {
+  "间距 Space": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "prefix": "Space",
-    "body": ["<Space>$1</Space>"],
-    "description": "间距",
+    "prefix": "antd Space space 间距",
+    "snippets": {
+      "import": [
+        "import { Button, Space, Upload, Popconfirm } from 'antd';",
+        "import { UploadOutlined } from '@ant-design/icons';"
+      ],
+      "variable": [],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Space>\n      Space\n      <Button type=\"primary\">Button</Button>\n      <Upload>\n        <Button>\n          <UploadOutlined /> Click to Upload\n        </Button>\n      </Upload>\n      <Popconfirm title=\"Are you sure delete this task?\" okText=\"Yes\" cancelText=\"No\">\n        <Button>Confirm</Button>\n      </Popconfirm>\n    </Space>",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
+    "description": "相邻组件水平间距。",
     "componentCode": "antd/space",
     "libraryCode": "antd"
   }

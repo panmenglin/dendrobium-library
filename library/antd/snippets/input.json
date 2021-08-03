@@ -2,7 +2,21 @@
   "输入框 Input": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd Input input 输入框",
-    "body": ["<Input placeholder=\"Basic usage\" />"],
+    "snippets": {
+      "import": ["import { Input } from 'antd';"],
+      "variable": [],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Input placeholder=\"Basic usage\" />",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
     "description": "通过鼠标或键盘输入内容，是最基础的表单域的包装。",
     "componentCode": "antd/input",
     "libraryCode": "antd"
@@ -10,7 +24,21 @@
   "输入框 文本域 Input": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd Input input 输入框 文本域",
-    "body": ["<Input.TextArea rows={4} />"],
+    "snippets": {
+      "import": ["import { Input } from 'antd';"],
+      "variable": ["const {\n  TextArea\n} = Input;"],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<TextArea rows={4} />",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
     "description": "用于多行输入。",
     "componentCode": "antd/input",
     "libraryCode": "antd"

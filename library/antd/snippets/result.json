@@ -1,0 +1,24 @@
+{
+  "结果 Result": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "antd Result result 结果",
+    "snippets": {
+      "import": ["import { Result, Button } from 'antd';"],
+      "variable": [],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Result status=\"success\" title=\"Successfully Purchased Cloud Server ECS!\" subTitle=\"Order number: 2017182818828182881 Cloud server configuration takes 1-5 minutes, please wait.\" extra={[<Button type=\"primary\" key=\"console\">\n        Go Console\n      </Button>, <Button key=\"buy\">Buy Again</Button>]} />",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
+    "description": "用于反馈一系列操作任务的处理结果。",
+    "componentCode": "antd/result",
+    "libraryCode": "antd"
+  }
+}

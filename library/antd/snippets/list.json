@@ -2,38 +2,22 @@
   "列表 List": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd List list 列表",
-    "body": {
-      "element": [
-        "<List",
-        "  itemLayout=\"horizontal\"",
-        "  dataSource={this.data}",
-        "  renderItem={item => (",
-        "    <List.Item>",
-        "      <List.Item.Meta",
-        "        avatar={<Avatar src=\"https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png\" />}",
-        "        title={<a href=\"https://ant.design\">{item.title}</a>}",
-        "        description=\"Ant Design, a design language for background applications, is refined by Ant UED Team\"",
-        "      />",
-        "    </List.Item>",
-        "  )}",
-        "/>"
+    "snippets": {
+      "import": ["import { List, Avatar } from 'antd';"],
+      "variable": [
+        "const data = [{\n  title: 'Ant Design Title 1'\n}, {\n  title: 'Ant Design Title 2'\n}, {\n  title: 'Ant Design Title 3'\n}, {\n  title: 'Ant Design Title 4'\n}];"
       ],
-      "property": [
-        "data = [",
-        "  {",
-        "    title: 'Ant Design Title 1',",
-        "  },",
-        "  {",
-        "    title: 'Ant Design Title 2',",
-        "  },",
-        "  {",
-        "    title: 'Ant Design Title 3',",
-        "  },",
-        "  {",
-        "    title: 'Ant Design Title 4',",
-        "  },",
-        "];"
-      ]
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<List itemLayout=\"horizontal\" dataSource={data} renderItem={item => <List.Item>\n        <List.Item.Meta avatar={<Avatar src=\"https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png\" />} title={<a href=\"https://ant.design\">{item.title}</a>} description=\"Ant Design, a design language for background applications, is refined by Ant UED Team\" />\n      </List.Item>} />",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
     },
     "description": "通用列表。",
     "componentCode": "antd/list",

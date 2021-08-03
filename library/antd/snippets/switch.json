@@ -1,0 +1,26 @@
+{
+  "开关 Switch": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "antd Switch switch 开关",
+    "snippets": {
+      "import": ["import { Switch } from 'antd';"],
+      "variable": [],
+      "function": [
+        "function onChange(checked) {\n  console.log(`switch to ${checked}`);\n}"
+      ],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Switch defaultChecked onChange={onChange} />",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
+    "description": "开关选择器。",
+    "componentCode": "antd/switch",
+    "libraryCode": "antd"
+  }
+}

@@ -1,67 +1,35 @@
 {
   "表格 远程加载数据 Table": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "prefix": "Table table",
-    "body": {
-      "element": [
-        "<Table",
-        "  columns={${1:columns}}",
-        "  rowKey={record => record.id}",
-        "  dataSource={data}",
-        "  pagination={pagination}",
-        "  loading={loading}",
-        "  onChange={this.handleTableChange}",
-        "/>"
+    "prefix": "antd Table table 表格",
+    "snippets": {
+      "import": [
+        "import { Table } from 'antd';",
+        "import reqwest from 'reqwest';"
       ],
-      "state": [
-        "state = {",
-        "  data: [],",
-        "  pagination: {",
-        "    current: 1,",
-        "    pageSize: 10",
-        "  }",
-        "}"
+      "variable": [
+        "const columns = [{\n  title: 'Name',\n  dataIndex: 'name',\n  sorter: true,\n  render: name => `${name.first} ${name.last}`,\n  width: '20%'\n}, {\n  title: 'Gender',\n  dataIndex: 'gender',\n  filters: [{\n    text: 'Male',\n    value: 'male'\n  }, {\n    text: 'Female',\n    value: 'female'\n  }],\n  width: '20%'\n}, {\n  title: 'Email',\n  dataIndex: 'email'\n}];",
+        "const getRandomuserParams = params => ({\n  results: params.pagination.pageSize,\n  page: params.pagination.current,\n  ...params\n});"
       ],
-      "property": [
-        "columns = [",
-        "  {",
-        "    title: 'Name',",
-        "    dataIndex: 'name',",
-        "    sorter: true,",
-        "    render: name => `${name.first} ${name.last}`,",
-        "    width: '20%',",
-        "  },",
-        "  {",
-        "    title: 'Gender',",
-        "    dataIndex: 'gender',",
-        "    filters: [",
-        "      { text: 'Male', value: 'male' },",
-        "      { text: 'Female', value: 'female' },",
-        "    ],",
-        "    width: '20%',",
-        "  },",
-        "  {",
-        "    title: 'Email',",
-        "    dataIndex: 'email',",
-        "  },",
-        "];"
-      ],
-      "method": [
-        "/**",
-        " *",
-        " * @param {*} pagination",
-        " * @param {*} filters",
-        " * @param {*} sorter",
-        " */",
-        "handleTableChange = (pagination, filters, sorter) => {",
-        "  this.fetch({",
-        "    sortField: sorter.field,",
-        "    sortOrder: sorter.order,",
-        "    pagination,",
-        "    ...filters,",
-        "  });",
-        "};"
-      ]
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [
+          "state = {\n  data: [],\n  pagination: {\n    current: 1,\n    pageSize: 10\n  },\n  loading: false\n};",
+          "handleTableChange = (pagination, filters, sorter) => {\n  this.fetch({\n    sortField: sorter.field,\n    sortOrder: sorter.order,\n    pagination,\n    ...filters\n  });\n};",
+          "fetch = (params = {}) => {\n  this.setState({\n    loading: true\n  });\n  reqwest({\n    url: 'https://randomuser.me/api',\n    method: 'get',\n    type: 'json',\n    data: getRandomuserParams(params)\n  }).then(data => {\n    console.log(data);\n    this.setState({\n      loading: false,\n      data: data.results,\n      pagination: { ...params.pagination,\n        total: 200 // 200 is mock data, you should read it from server\n        // total: data.totalCount,\n\n      }\n    });\n  });\n};"
+        ],
+        "function": [
+          "componentDidMount() {\n  const {\n    pagination\n  } = this.state;\n  this.fetch({\n    pagination\n  });\n}"
+        ],
+        "element": "<Table columns={columns} rowKey={record => record.login.uuid} dataSource={data} pagination={pagination} loading={loading} onChange={this.handleTableChange} />",
+        "render": {
+          "variable": [
+            "const {\n  data,\n  pagination,\n  loading\n} = this.state;"
+          ],
+          "function": []
+        }
+      }
     },
     "description": "表格 远程加载数据",
     "componentCode": "antd/table",

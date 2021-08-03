@@ -2,20 +2,22 @@
   "气泡卡片 Popover": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd Popover popover 气泡 卡片",
-    "body": {
-      "element": [
-        "<Popover content={content} title=\"Title\">",
-        "  <Button type=\"primary\">Hover me</Button>",
-        "</Popover>"
+    "snippets": {
+      "import": ["import { Popover, Button } from 'antd';"],
+      "variable": [
+        "const content = <div>\n    <p>Content</p>\n    <p>Content</p>\n  </div>;"
       ],
-      "property": [
-        "content = (",
-        "  <div>",
-        "    <p>Content</p>",
-        "    <p>Content</p>",
-        "  </div>",
-        ")"
-      ]
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Popover content={content} title=\"Title\">\n    <Button type=\"primary\">Hover me</Button>\n  </Popover>",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
     },
     "description": "点击/鼠标移入元素，弹出气泡式的卡片浮层。",
     "componentCode": "antd/popover",

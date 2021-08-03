@@ -2,31 +2,23 @@
   "折叠面板 Collapse": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd Collapse collapse 折叠面板",
-    "body": {
-      "element": [
-        "<Collapse defaultActiveKey={['1']} onChange={this.callback}>",
-        "  <Collapse.Panel header=\"This is panel header 1\" key=\"1\">",
-        "    <p>{this.text}</p>",
-        "  </Collapse.Panel>",
-        "  <Collapse.Panel header=\"This is panel header 2\" key=\"2\">",
-        "    <p>{this.text}</p>",
-        "  </Collapse.Panel>",
-        "  <Collapse.Panel header=\"This is panel header 3\" key=\"3\">",
-        "    <p>{this.text}</p>",
-        "  </Collapse.Panel>",
-        "</Collapse>"
+    "snippets": {
+      "import": ["import { Collapse } from 'antd';"],
+      "variable": [
+        "const {\n  Panel\n} = Collapse;",
+        "const text = `\n  A dog is a type of domesticated animal.\n  Known for its loyalty and faithfulness,\n  it can be found as a welcome guest in many households across the world.\n`;"
       ],
-      "property": [
-        "text = `",
-        "A dog is a type of domesticated animal.",
-        "Known for its loyalty and faithfulness,",
-        "it can be found as a welcome guest in many households across the world.",
-        "`;"
-      ],
-      "method": [
-        "callback = (key) => {",
-        "  console.log(key);",
-        "}"]
+      "function": ["function callback(key) {\n  console.log(key);\n}"],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Collapse defaultActiveKey={['1']} onChange={callback}>\n    <Panel header=\"This is panel header 1\" key=\"1\">\n      <p>{text}</p>\n    </Panel>\n    <Panel header=\"This is panel header 2\" key=\"2\">\n      <p>{text}</p>\n    </Panel>\n    <Panel header=\"This is panel header 3\" key=\"3\">\n      <p>{text}</p>\n    </Panel>\n  </Collapse>",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
     },
     "description": "可以折叠/展开的内容区域。",
     "componentCode": "antd/collapse",

@@ -1,0 +1,29 @@
+{
+  "时间选择框 timePicker": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "antd TimePicker timePicker 时间选择框",
+    "snippets": {
+      "import": [
+        "import { TimePicker } from 'antd';",
+        "import moment from 'moment';"
+      ],
+      "variable": [],
+      "function": [
+        "function onChange(time, timeString) {\n  console.log(time, timeString);\n}"
+      ],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<TimePicker onChange={onChange} defaultOpenValue={moment('00:00:00', 'HH:mm:ss')} />",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
+    "description": "点击 TimePicker，然后可以在浮层中选择或者输入某一时间。",
+    "componentCode": "antd/timePicker",
+    "libraryCode": "antd"
+  }
+}

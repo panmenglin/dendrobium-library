@@ -2,7 +2,21 @@
   "分割线 Divider": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd Divider divider 分割线",
-    "body": ["<Divider type=\"${1|horizontal,vertical}\"/>"],
+    "snippets": {
+      "import": ["import { Divider } from 'antd';"],
+      "variable": [],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<>\n    <p>\n      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista\n      probare, quae sunt a te dicta? Refert tamen, quo modo.\n    </p>\n    <Divider />\n    <p>\n      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista\n      probare, quae sunt a te dicta? Refert tamen, quo modo.\n    </p>\n    <Divider dashed />\n    <p>\n      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista\n      probare, quae sunt a te dicta? Refert tamen, quo modo.\n    </p>\n  </>",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
     "description": "分割线",
     "componentCode": "antd/divider",
     "libraryCode": "antd"
@@ -10,7 +24,21 @@
   "带文字的分割线 Divider": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "antd Divider divider 分割线",
-    "body": ["<Divider type=\"${1|horizontal,vertical}\" orientation=\"${2|center,left,right}\">$3</Divider>"],
+    "snippets": {
+      "import": ["import { Divider } from 'antd';"],
+      "variable": [],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<>\n    <p>\n      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista\n      probare, quae sunt a te dicta? Refert tamen, quo modo.\n    </p>\n    <Divider>Text</Divider>\n    <p>\n      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista\n      probare, quae sunt a te dicta? Refert tamen, quo modo.\n    </p>\n    <Divider orientation=\"left\">Left Text</Divider>\n    <p>\n      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista\n      probare, quae sunt a te dicta? Refert tamen, quo modo.\n    </p>\n    <Divider orientation=\"right\">Right Text</Divider>\n    <p>\n      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista\n      probare, quae sunt a te dicta? Refert tamen, quo modo.\n    </p>\n  </>",
+        "render": {
+          "variable": [],
+          "function": []
+        }
+      }
+    },
     "description": "带文字的分割线",
     "componentCode": "antd/divider",
     "libraryCode": "antd"

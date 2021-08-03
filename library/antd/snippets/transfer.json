@@ -1,0 +1,36 @@
+{
+  "穿梭框 Transfer": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "antd Transfer transfer 穿梭框",
+    "snippets": {
+      "import": [
+        "import React, { useState } from 'react';",
+        "import { Transfer } from 'antd';"
+      ],
+      "variable": [
+        "const mockData = [];",
+        "const initialTargetKeys = mockData.filter(item => +item.key > 10).map(item => item.key);"
+      ],
+      "function": [],
+      "tsType": [],
+      "body": {
+        "variable": [],
+        "function": [],
+        "element": "<Transfer dataSource={mockData} titles={['Source', 'Target']} targetKeys={targetKeys} selectedKeys={selectedKeys} onChange={onChange} onSelectChange={onSelectChange} onScroll={onScroll} render={item => item.title} />",
+        "render": {
+          "variable": [
+            "const [targetKeys, setTargetKeys] = useState(initialTargetKeys);",
+            "const [selectedKeys, setSelectedKeys] = useState([]);",
+            "const onChange = (nextTargetKeys, direction, moveKeys) => {\n  console.log('targetKeys:', nextTargetKeys);\n  console.log('direction:', direction);\n  console.log('moveKeys:', moveKeys);\n  setTargetKeys(nextTargetKeys);\n};",
+            "const onSelectChange = (sourceSelectedKeys, targetSelectedKeys) => {\n  console.log('sourceSelectedKeys:', sourceSelectedKeys);\n  console.log('targetSelectedKeys:', targetSelectedKeys);\n  setSelectedKeys([...sourceSelectedKeys, ...targetSelectedKeys]);\n};",
+            "const onScroll = (direction, e) => {\n  console.log('direction:', direction);\n  console.log('target:', e.target);\n};"
+          ],
+          "function": []
+        }
+      }
+    },
+    "description": "双栏穿梭选择框。",
+    "componentCode": "antd/transfer",
+    "libraryCode": "antd"
+  }
+}
